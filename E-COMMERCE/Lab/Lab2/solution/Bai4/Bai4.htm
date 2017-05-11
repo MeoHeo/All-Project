@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lab2_Bai4</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script>
+		function allowDrop(ev) {
+		    ev.preventDefault();
+		}
+
+		function drag(ev) {
+		    ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+		    ev.preventDefault();
+		    var data = ev.dataTransfer.getData("text");
+		    ev.target.appendChild(document.getElementById(data));
+		}
+		</script>		
+	</head>
+	<body>
+		<div id="drap">
+			<div id="g1">
+			<div class="group1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="group2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="group3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			</div>
+
+			<div id="g2">
+			<div class="group1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="group2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="group3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			</div>
+
+			<div id="g3">
+			<div class="group1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="group2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="group3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			</div>
+		</div>
+		<div id="drop">
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="./images/Rubik1.jpg" ondragstart="drag(event)" id="drag1">
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="./images/Rubik6.jpg" ondragstart="drag(event)" id="drag6">
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="./images/Rubik8.jpg" ondragstart="drag(event)" id="drag8">
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="./images/Rubik9.jpg" ondragstart="drag(event)" id="drag9">
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				
+				<img src="./images/Rubik4.jpg" ondragstart="drag(event)" id="drag4">
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="./images/Rubik2.jpg" ondragstart="drag(event)" id="drag2">		
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="./images/Rubik7.jpg" ondragstart="drag(event)" id="drag7">
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				
+				<img src="./images/Rubik3.jpg" ondragstart="drag(event)" id="drag3">
+			</div>
+			<div class="img" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<img src="./images/Rubik5.jpg" ondragstart="drag(event)" id="drag5">
+			</div>
+		</div>
+	</body>
+</html>

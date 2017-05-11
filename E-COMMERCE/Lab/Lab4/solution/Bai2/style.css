@@ -1,0 +1,23 @@
+* {
+	margin:0;
+	padding:0
+}
+.form{
+	margin-top: 2%;
+	margin-left: 2%;
+	float: left;
+	width: 50%;
+	border: solid 1px;
+	font-size: 1.2em;
+	/*height: 500px;*/
+}
+p{
+	font-weight: bold;
+	color: red;
+}
+#review{
+	width: 40%;
+}
+#info{
+	line-height: 200%;
+}

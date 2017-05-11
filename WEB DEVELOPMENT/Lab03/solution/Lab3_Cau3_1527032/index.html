@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lab3_layout2</title>
+		<meta charset="utf-8"/>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				font-family: Arial ;
+			}
+			#main{
+				width: 800px;
+				margin: auto;
+			}
+			#header{
+				height: 50px;
+				background-color:rgb(146,146,146);
+				font-weight: bold;
+				font-size: 2em;
+			}
+			#menu >ul{
+				list-style-type:none;
+				margin-left: 35px;
+			}
+			#menu >ul>li{
+				display:inline;
+				margin:5px;
+				color:white;
+				text-decoration: underline
+			}
+			#menu{
+				height:50px;
+				line-height:50px;
+				background-color:rgb(4,51,225);
+			}
+			#right{
+				width: 550px;
+				text-align:justify;
+				background-color: white;
+				float:right;
+			}
+			#r-top{
+				margin: 5px 5px 5px 5px;
+			}
+			#r-bottom{
+				height: 128px;	
+				display: table;			
+			}
+			#r-bottom-left{
+				background-color: rgb(0,143,0);
+				width: 275px;
+				display: table-cell;
+				padding: 20px 10px 20px 10px;
+			}
+			#r-bottom-right{
+				background-color: rgb(255,38,0);
+				width: 275px;
+				display: table-cell;
+				padding: 20px 10px 20px 10px;
+			}
+			#left{
+				width:250px;
+				display: table-cell;
+				float: left;
+			}
+			#Row-top{
+				background-color: rgb(255,251,0);
+				height: 150px;
+				width: 250px;
+			}
+			#Row-top >ul>li{
+				margin-left:30px;
+			}
+			#Row-bottom{
+				background-color: rgb(146,146,146);
+				height:150px;
+				width: 250px;
+			}
+			#Row-bottom >ul>li{
+				margin-left:30px;
+			}
+			li span{
+				color: blue;
+				text-decoration:underline;
+			}
+			li{
+				color:black;
+			}
+			#footer{
+				height: 50px;
+				background-color:rgb(4,51,255);
+				font-weight: bold;
+				font-size: 2em;
+				margin-bottom: 200px;
+				text-align:center;
+				line-height:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">Header</div>
+			<div id="menu">
+				<ul>
+					<li>Menu 1</li>
+					<li>Menu 2</li>
+					<li>Menu 3</li>
+					<li>Menu 4</li>
+					<li>Menu 5</li>
+				</ul>
+			</div>
+			<div id="content">
+
+				<div id="left">
+					<div id="Row-top">
+						<ul>
+							<li><span>Link 1</span></li>
+							<li><span>Link 2</span></li>
+							<li><span>Link 3</span></li>
+							<li><span>Link 4</span></li>
+							<li><span>Link 5</span></li>
+						</ul>
+					</div>
+					<div id="Row-bottom">
+						<ul>
+							<li><span>Link 1</span></li>
+							<li><span>Link 2</span></li>
+							<li><span>Link 3</span></li>
+							<li><span>Link 4</span></li>
+							<li><span>Link 5</span></li>
+						</ul>
+					</div>
+					<div style= "clear:both"></div>
+				</div>
+
+				<div id="right">
+					<div id="r-top">
+
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egone quaeris, inquit, quid sentiam? Hi curatione adhibita levantur in dies, valet alter plus cotidie, alter videt. Duo Reges: constructio interrete. Indicant pueri, in quibus ut in speculis natura cernitur. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Prave, nequiter, turpiter cenabat.
+
+					Vide igitur ne non debeas verbis nostris uti, sententiis tuis. Huius ego nunc auctoritatem sequens idem faciam. Facillimum id quidem est, inquam. Quid enim est a Chrysippo praetermissum in Stoicis? Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Expressa vero in iis aetatibus, quae iam confirmatae sunt. 
+
+					</p><br ><br>
+
+					<p>Quamvis enim depravatae non sint, pravae tamen esse possunt. Neque solum ea communia, verum etiam paria esse dixerunt. An potest, inquit ille, quicquam esse suavius quam nihil dolere? Universa enim illorum ratione cum tota vestra confligendum puto. Negat enim summo bono afferre incrementum diem. Neque solum ea communia, verum etiam paria esse dixerunt.
+
+					Mihi quidem Antiochum, quem audis, satis belle videris attendere. Si id dicis, vicimus. Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit. Sed vos squalidius, illorum vides quam niteat oratio. Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;
+					</p><br>
+
+					</div>
+					<div id="r-bottom">
+						<div id="r-bottom-left">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egone quaeris, inquit, quid sentiam? Hi curatione adhibita levantur in dies, valet alter plus cotidie, alter videt
+							</p>
+						</div>
+						<div id="r-bottom-right">
+							<p>
+								Mihi quidem Antiochum, quem audis, satis belle videris attendere. Si id dicis, vicimus. Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.
+							</p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+				<div style="clear:both;"></div>
+			</div>
+			<div id="footer">Footer</div>
+		</div>
+	</body>
+</html>

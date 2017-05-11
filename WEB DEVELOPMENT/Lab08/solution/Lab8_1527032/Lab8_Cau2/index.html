@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lab8_bai2</title>
+		<link rel="stylesheet" type="text/css" href = "style.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+			function Check() 
+			{
+				var firstname = document.register.firstname.value;
+				var lastname = document.register.lastname.value;
+				var email = document.register.email.value;
+				var matched_email = new RegExp("\.@\..\.");
+				var is_match_email = matched_email.test(email);
+				var password = document.register.password.value;
+				var birthday = document.register.birthday.value;
+				var about = document.register.about.value;
+
+				if(firstname.length < 2 || firstname.length > 30){
+					alert("First name is not valid");
+				}
+				else if(lastname.length < 2 || lastname.length > 30){
+					alert("Last name is not valid");
+				}
+				else if(!is_match_email) {
+					alert("Invalid email");
+				}
+				else if(password.length < 2 || password.length > 30){
+					alert("Invalid password");
+				}
+				else if(birthday == '') {
+					alert("please choose birthday");
+				}
+				else if(about.length > 1000) {
+					alert("Text is too long")
+				}
+				else alert("Complete");
+			}
+		</script>
+	</head>
+	<body>
+		<!-- ===========================Create Form======================= -->
+	<h1>Member Register</h1>
+		<form name="register" onsubmit="return Check()">
+			First name: <br>
+			<input type="text" name="firstname">*
+			
+			<br>
+			
+			Last name: <br>
+			<input type="text" name="lastname">*
+			
+			<br>
+
+			Email:<br>
+			<input type="email" name="email">*
+			
+			<br>
+			
+			Password:<br>
+	  		<input type="password" name="password" class="checkLen">*
+	  		
+	  		<br>
+
+	  		Birthday:<br>
+	  		<input type="date" name="birthday">*
+	  		 		
+	  		<br>
+	  		<!-- ===========================gender======================= -->
+	  		Gender:<br>
+	  		<input type="radio" name="gender" value="male" checked> Male<br>
+	  		<input type="radio" name="gender" value="female"> Female<br>
+	  		<input type="radio" name="gender" value="other"> Other<br>
+	  		
+	  		<!-- ===========================country======================= -->
+	  		Country:<br>
+	  		<select name="country">
+			  <option value="Vietnam">Vietnam</option>
+			  <option value="Australia">Australia</option>
+			  <option value="United States,">United States,</option>
+			  <option value="India">India</option>
+			  <option value="Other">Other</option>
+			</select>
+			
+			<br>
+			<!-- ===========================About======================= -->
+			About:<br>
+			<textarea name="about"></textarea>*
+			
+			<br>
+
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset" name="reset" value="Reset">
+		</form>
+	</body>
+</html>

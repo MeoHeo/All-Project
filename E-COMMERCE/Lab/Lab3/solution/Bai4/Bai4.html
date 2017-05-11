@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lab3_Bai4</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script>
+		function openPage(evt, pageName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(pageName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+		</script>
+	</head>
+	<body>
+	<h1>Multi Page Photograph Gallery</h1>
+	<div class="tab">
+		<a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'page1')">Page 1</a>
+  		<a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'page2')">Page 2</a>
+	</div>
+
+	<div id="page1" class="tabcontent">
+		<ul>
+			<li><img src="./img/photo01.jpg"></li>
+			<li><img src="./img/photo02.jpg"></li>
+			<li><img src="./img/photo03.jpg"></li>
+			<li><img src="./img/photo04.jpg"></li>
+
+			<li><img src="./img/photo05.jpg"></li>
+			<li><img src="./img/photo06.jpg"></li>
+			<li><img src="./img/photo07.jpg"></li>
+			<li class="end"><img src="./img/photo08.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="page2" class="tabcontent">
+		<ul>
+			<li><img src="./img/photo09.jpg"></li>
+			<li><img src="./img/photo10.jpg"></li>
+			<li><img src="./img/photo11.jpg"></li>
+			<li><img src="./img/photo12.jpg"></li>
+
+			<li><img src="./img/photo13.jpg"></li>
+			<li><img src="./img/photo14.jpg"></li>
+			<li><img src="./img/photo15.jpg"></li>
+			<li><img src="./img/photo16.jpg"></li>
+
+			<li><img src="./img/photo17.jpg"></li>
+			<li><img src="./img/photo18.jpg"></li>
+			<li><img src="./img/photo19.jpg"></li>
+			<li class="end"><img src="./img/photo20.jpg">
+		</ul>
+	</div>
+	</body>
+</html>

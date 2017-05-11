@@ -1,0 +1,266 @@
+
+
+/*=======================================================*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+		/*test
+	border-style: solid;
+    border-width: 1px;*/
+}
+body{
+	background-image: url("./images/bg.gif");
+	background-position: center;
+	background-repeat: repeat;
+}
+#main{
+	width: 60%;
+	margin: 0px auto;
+	background-color: white;
+
+}
+	/*--------------PHAN HEADER-----------------*/
+	#header{
+		background-image: url("./images/tilte.jpg");
+		background-size: contain;		background-position: left;
+		background-repeat: no-repeat;
+		/*height: 500px !important;*/
+	}
+	#blank{
+		height: 50%;
+		float: left;
+	}
+	#h_left{
+		float:left;
+		height: 50%;
+	}
+	#h_right{
+		float: left;
+		height: 20%;
+	}
+	#h_left ul{
+		list-style-type: none;
+		padding: 56px 2px 2px 47px;
+	}
+	#h_left ul li{
+		display: inline;
+		font-size: 20px;
+	}
+	#h_right input{
+		border-radius: 15px;
+		position:relative;
+		top:40%;
+		width:80%;
+		
+	}
+	/*--------------PHAN CONTENT-----------------*/
+	#content{
+		height: 80%;
+		/* position: relative; */
+		border: solid #EF64A5 0.25px;
+	}
+		/*--------------PHAN CONTENT-LEFT-----------------*/
+		#left{
+			/* width: 20%; */
+			height: 100%;
+			float: left;
+			border-right: solid #EF64A5 0.25px;
+			border-bottom: solid #EF64A5 0.25px;
+		}
+		#category >h3{
+			border-bottom: solid #EF64A5 0.25px;
+			text-align: center;
+		}
+		#category >ul{
+			list-style-type: none;
+			padding: 6% 0% 0% 20%;
+		}
+		#category >ul>li{
+			padding-bottom: 5%;
+		}
+		#topProducts >ul{
+			list-style-type: none;
+			padding: 6% 0% 0% 20%;
+		}
+		#topProducts >ul>li{
+			padding-bottom: 5%;
+		}
+		#topProducts >h3{
+			border-top: solid #EF64A5 0.25px;
+			border-bottom: solid #EF64A5 0.25px;
+			text-align: center;
+		}
+		/*--------------PHAN CONTENT-CENTER-----------------*/
+		#center{
+			/* width: 480px; */
+			height: 80%;
+			float: left;
+		}
+		.products {
+			width: 100%;
+			height: 700px;
+		}
+		.image{
+			border: solid #EF64A5 0.25px;
+			float:left;
+			height: 30%;
+			/*margin-top: 5%;
+			margin-left: 5%;*/
+			/*width: 30%;*/
+			/*object-fit: cover;*/
+			margin: 5% 3% 0% 5%;
+		}
+		.i-img{
+			height: 70%;
+			width: 100%;
+			padding: 3%;
+			/*padding: 7% 0% 0% 5%;*/
+			/*margin: 5% 0% 0% 5%;*/
+
+		}
+		.i-img img{			
+			width: 100%;
+			height: 100%;*/
+			/*height:200px;*/
+			/*background-color: yellow;	*/
+		}
+
+		.image p{
+			text-align: center;
+		}
+		.image button{
+			text-align: center;
+		}
+		#choose{
+			width: 50%;
+			max-height: 100%;
+			float: left;
+			border: solid #EF64A5 0.25px;
+			border-radius: 5px;
+			margin: 0% 0% 0% 20%;
+		}
+		#choose >ul{
+			list-style-type: none;
+			text-align: center;
+		}
+		#choose >ul >li{
+			display: inline;
+		}
+		#choose >ul>li>a{
+			text-decoration: none;
+			line-height: 30px;
+			font-size: 26px;
+			border-right: solid #EF64A5 0.25px;
+			padding: 0px 3px 0px 6px;
+		}
+		#exp{
+			border-right: none;
+		}
+		/*--------------PHAN CONTENT-RIGHT-----------------*/
+		#right{
+			/* width: 160px; */
+			/* height: 100%; */
+			float: left;
+			border-left: solid #EF64A5 0.25px;
+			/* padding: 10px 0px 0px 8px; */
+		}
+		#right  img{
+			margin-bottom: 15px;
+			width: 100%;
+			height: 100%;
+		}
+
+		.clear{
+			clear:both;
+		}
+	/*--------------PHAN FOOTER-----------------*/
+	#footer{
+		height: 200px;
+	}
+	#cat{
+		float: left;
+	}
+	#info{
+		float: left;
+		padding: 50px 5px 5px 70px;
+	}
+	#info >p{
+		font-size: 2em;
+	}
+	#info >a{
+		padding: 10px 5px 5px 12px;
+	}
+
+/* For mobile phones: */
+@media only screen and (min-width: 0px)
+{
+	[class*="col-"] {
+    width: 100%;
+	}
+	#header{
+    	height: 118px;
+    }
+    #h_left ul{
+    	padding: 25px 0px 0px 7px;
+    }
+    #h_left >ul >li{
+		font-size: 1em;
+		padding-left: 5%;
+	}
+	#h_right input{
+		margin: 5% 0% 0% 15%;
+	}
+	#content{
+		margin-top: 25%;		
+	}
+
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    #header{
+    	height: 218px;
+    }
+    #h_left >ul >li{
+		font-size: 1em;
+	}
+	#content{
+		margin-top: 0%;		
+	}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {/* width: 100%; *//* height: auto; */}
+   #header{
+    	height: 318px;
+    }
+   #h_left ul li{
+		font-size: 1.5em;
+	}
+	#content{
+		margin-top: 0%;		
+	}
+}

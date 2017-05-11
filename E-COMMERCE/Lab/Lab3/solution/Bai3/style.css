@@ -1,0 +1,41 @@
+* {
+	margin:0;
+	padding:0
+}
+h1{
+	color: red;
+	text-align: center;
+	font-size: 5em;
+}
+#image{
+	width: 80%;
+	border-top: dashed;
+	border-color: gray;
+	margin-top: 2%;
+	margin:auto;
+}
+ul{
+	list-style-type: none;
+}
+ul li{
+	background-color: gray;
+	float: left;
+	width: 21%;
+	height: 180px;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+img{
+	margin-top: 5%;
+	margin-left: 5%;
+	border: double;
+	border-color: white;
+}
+img:hover{
+    -webkit-transform:scale(2.0); /*Webkit: Scale up image to 1.2x original size*/
+    -moz-transform:scale(2.0); /*Mozilla scale version*/
+    -o-transform:scale(2.0); /*Opera scale version*/
+}
+.end{
+	margin-bottom: 15%;
+}

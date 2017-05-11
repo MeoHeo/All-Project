@@ -1,0 +1,19 @@
+* {
+	margin:0;
+	padding:0
+}
+form{
+	background-color: orange;
+	width: 60%;
+	margin: auto;
+	margin-top: 3%;
+	padding-top: 2%;
+	color: white;
+	font-size: 1.2em;
+}
+h1{
+	padding-bottom: 2%;	
+}
+td{
+	padding-top: 1%;
+}

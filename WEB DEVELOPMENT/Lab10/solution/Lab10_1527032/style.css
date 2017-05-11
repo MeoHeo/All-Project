@@ -1,0 +1,53 @@
+#table {
+	float: left;
+	width: 45%;
+}
+#menu {
+	float: left;
+	width: 55%;
+}
+table, th, td {
+	padding: 10px;
+	border: 1px solid;
+	text-align: center;
+	border-collapse: collapse;
+}
+td:nth-child(2) {
+	width: 50%;
+}
+td:first-child, td:last-child {
+	width: 25%;
+}
+table {
+	width: 100%;
+	color: blue;
+}
+input[id*=id] {
+	margin-left: 30px;
+}
+input[id*=name] {
+	margin-left: 8px;
+}
+input[id*=year] {
+	margin-left: 18px;
+}
+input[type=submit] {
+	margin-left: 76px;
+}
+form > div {
+	float: left;
+	padding-right: 10px;
+}
+.error {
+	color: red;
+}
+.info {
+	color: blue;
+}
+.title {
+	color: blue;
+}
+h3, h5 {
+	padding: 0;
+	margin: 5px;
+}

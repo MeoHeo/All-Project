@@ -1,0 +1,108 @@
+.header {
+	width: 100%;
+	height: 105px;
+	background-color: #3d3d5c;
+}
+.header-logo, .header-user {
+	margin-top: 35px;
+	padding: 10px;
+}
+.header-user {
+	padding-left: 10px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.header-user ul li {
+	display: inline-block;
+	padding-left: 20px;
+}
+.header-logo {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+
+.menu-admin {
+	width: 15%;
+	float: left;
+	background-color: #1f1f2e;
+	min-height: 500px;
+}
+.menu-admin ul.list > li{
+	display: block;
+	padding: 10px 20px;
+	color: #d1d1e0;
+}
+.menu-admin ul.list > li:hover{
+	background-color: #14141f;
+	cursor:pointer
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-admin ul.list li a{
+	display: block;
+	padding: 10px 10px;
+	color: #a3a3c2;
+	text-decoration-style: none;
+}
+.menu-admin ul.list li a:hover{
+	text-decoration-style: none;
+}
+
+
+
+.insert-film {
+	padding-left: 50px;
+}
+
+
+
+#back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display:none;
+    opacity: 0.5;
+    background-color: red;
+    border:none;
+}
+
+.glyphicon-arrow-up {
+	color: white;
+}
+/*--------------------------------------------------------*/
+
+
+/*-------------------footer--------------------*/
+
+footer {
+	height: 130px;
+	background-color: #262626;
+	padding-top: 20px;
+	text-align: center;
+}
+footer small {
+	color: #999999;
+}
+footer ul.copyright {
+	padding-top: 10px;
+	text-align: center;
+}
+footer ul.feedback {
+	padding-top: 10px;
+	text-align: center;
+}
+.fa-stack-1x {
+    color:white;
+}
+.icon-facebook {
+   color:#3b5998;
+}
+
+.icon-twitter {
+    color:#00aced;
+}

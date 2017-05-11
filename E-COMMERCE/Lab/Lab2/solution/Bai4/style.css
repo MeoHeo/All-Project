@@ -1,0 +1,62 @@
+* {
+	margin:0;
+	padding:0
+}
+#drap{
+	width: 43%;
+	height: 600px;
+	//border: double;
+	margin-left: 1%;
+	margin-top: 2%;
+	float: left;
+}
+#drop{
+	width: 53%;
+	height: 600px;
+	border: double;
+	margin-left: 2%;
+	margin-top: 2%;
+	float: left;
+}
+.img{
+	width: 32%;
+	height: 32%;
+	border: double;
+	margin: 0.1% 0.1% 0.1% 0.1%;
+	float:left;
+}
+.img>img{
+	margin: 5% 2% 2% 5%;
+	draggable: true;
+}
+
+#g1{
+	height: 29%;
+	/*border: double;*/
+}
+#g2{
+	height: 26%;
+	/*border: double;*/
+}
+#g3{
+	height: 25%;
+	/*border: double;*/
+}
+.group1{
+	width: 26%;	
+	height: 100%;
+	border: double;
+	float:left;
+}
+.group2{
+	width: 32%;
+	height: 100%;
+	border: double;
+	float:left;
+}
+.group3{
+	width: 36%;
+	height: 100%;
+	border: double;
+	float:left;
+}

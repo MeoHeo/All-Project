@@ -1,0 +1,378 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+	border-style: solid;
+    border-width: 0px;
+}
+ul {
+	list-style-type: none;
+}
+div {
+	border-width: 0px;
+	border-style: solid;
+	border-color: #0;
+}
+
+#contents {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.main-activity {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 0;
+	height: 100%;
+}
+
+.chanel li{
+	float: left;
+	list-style-type: none;
+	background-color: white;
+	vertical-align: middle;
+	margin: 1%;
+	width: 10%;
+}
+
+.live-next > nav > ul > li {
+	float: left;
+	list-style-type: none;
+	background-color: black;
+	vertical-align: middle;
+	margin: 1%;
+	width: 100%;
+	position: absolute;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;      
+}
+
+.main-screen, .list-chanels, .live-next {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    position: relative;
+}
+
+.list-chanels {
+	padding-left: 5px;
+}
+
+.main-screen > img, .chanel > li > a > img {
+    width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.spacer {
+	clear: both;
+}
+
+.live-next nav ul{
+	height:500px; 
+	width:100%;
+    margin-top: 5%;
+}
+.live-next nav ul{overflow:hidden; overflow-y:scroll;}
+
+
+
+.product-price {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.product-price > p {
+	font-size: 20px;
+	margin-bottom: 2px;
+}
+
+.product-buy {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.button {
+    border-width: 0px;
+	border-style: solid;
+	border-color: #0;
+	border-radius: 3px;
+	background-color: #F88C0A;
+    color: black;
+    padding: 2px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.button:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.product {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 2%;
+	background-color: #FFFFFF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+.nd{
+	border:solid 0px;
+}
+.nd img{
+	width: 100%;
+	height: 100%;
+}
+.cover{
+	border:solid 0px;
+}
+iframe{
+	margin-top: 5%;
+}
+
+/*---------------------------Header CSS*--------------------*/
+
+.header {
+	width: 100%;
+	height: 105px;
+}
+.header-logo, .header-search, .header-user {
+	margin-top: 35px;
+	padding: 10px;
+}
+.header-search {
+	text-align: center;
+}
+.header-user {
+	padding-left: 10px;
+}
+.header-user ul li {
+	display: block;
+	float: right;
+	padding-left: 10px;
+}
+.header-logo {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+/*-----------------------------------------------------------------*/
+
+
+
+
+
+
+/*--------------------------Navigation Bar CSS----------------------*/
+
+nav {
+	padding: 0;
+	background-color: white;
+	border-top: 2px solid red;
+	min-height:42px;
+}
+/*Navigation Bar fixed when scroll*/
+.nav-fixed {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+.main-menu {
+	margin: 0;
+	padding: 0;
+}
+.main-menu > li {
+	position: relative;
+	float: left;
+	padding: 10px 15px;
+}
+.main-menu > li:hover {
+	background-color: red;
+}
+.main-menu > li:hover > a {
+	color: white; 
+}
+.main-menu a, .main-menu a:hover,
+.main-menu a:active, .main-menu a:visited {
+	text-decoration: none;
+	color: red;
+}
+/*--------------------------------------------------------------*/
+
+
+
+
+
+/*-----------CSS for hovering link on Navigation Bar------------*/
+
+.sub-main-menu {
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	width: 500%;
+	z-index: 1;
+	background-color: white;
+	border: 1px solid red;
+}
+.sub-main-menu ul {
+	padding: 0;
+}
+.sub-main-menu ul li {
+	text-align: left;
+	width: 50%;
+	float: left;
+	padding: 5px 10px;
+	margin: 0;
+}
+.sub-main-menu ul li:hover {
+	background-color: red;
+}
+.sub-main-menu ul li:hover a {
+	color: white;
+}
+/*-------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------Navigation Bar hidden CSS--------------------*/
+
+.main-menu-hide {
+	position: absolute;
+	top: 147px;
+	width: inherit;
+	z-index: 1;
+	background-color: white;
+	border: 1px solid red;
+}
+.btn-main-menu-hide {
+	display: none;
+}
+.main-menu-hide ul {
+	padding: 0;
+	margin: 0;
+}
+.main-menu-hide > ul > li {
+	text-align: center;
+	display: block;
+	padding: 5px 0;
+	border-bottom: 1px solid red;
+}
+.main-menu-hide > ul > li:hover {
+	background-color: red;
+	color: white;
+}
+.main-menu-hide ul li a {
+	color: red;
+	text-decoration: none;
+}
+/*Navigation Bar fixed when scroll*/
+.main-menu-hide-fixed {
+	position: fixed;
+	top: 40px;
+}
+/*-----------------------------------------------------------*/
+
+
+
+
+/*-----------CSS for hovering link on Navigation Bar hidden----------*/
+
+.main-menu-hide > ul > li:hover > a {
+	color: white;
+}
+.sub-main-menu-hide {
+	background-color: white;
+}
+ul.main-menu-list {
+	margin: 0;
+	padding: 0;
+}
+.main-menu-hide .sub-main-menu-hide ul li {
+	float: left;
+	width: 33.33%;
+	text-align: left;
+	padding: 5px 5px;
+}
+.main-menu-hide .sub-main-menu-hide ul li:hover a {
+	color: white;
+}
+.main-menu-hide .sub-main-menu-hide ul li:hover {
+	background-color: red;
+}
+/*------------------------------------------------------*/
+
+footer {
+	height: 130px;
+	background-color: #262626;
+	padding-top: 20px;
+	text-align: center;
+}
+footer small {
+	color: #999999;
+}
+footer ul.copyright {
+	padding-top: 10px;
+	text-align: center;
+}
+footer ul.feedback {
+	padding-top: 10px;
+	text-align: center;
+}
+.fa-stack-1x {
+    color:white;
+}
+.icon-facebook {
+   color:#3b5998;
+}
+
+.icon-twitter {
+    color:#00aced;
+}
+@media only screen and (max-width: 991px) {
+	.main-menu {
+		display: none;
+	}
+	.btn-main-menu-hide {
+		display: inline;
+	}
+	nav {
+		background-color: transparent;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.header-logo, .header-search, .header-user {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+#ifYoutube{
+	margin-top: 0%;
+}

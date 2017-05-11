@@ -1,0 +1,5 @@
+﻿Nguyen Thi Phuong - 1527032
+
+this is a simple application to exchange rate currency
+the project use Xamarin android to build
+api use: https://currencylayer.com/quickstart

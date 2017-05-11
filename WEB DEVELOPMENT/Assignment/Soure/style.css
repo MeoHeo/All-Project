@@ -1,0 +1,467 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+body {
+	background-color: white;
+}
+.container-fluid {
+	padding: 0;
+	background-color: white;
+}
+
+/*---------------------------Header CSS*--------------------*/
+
+.header {
+	width: 100%;
+	height: 105px;
+}
+.header-logo, .header-search, .header-user {
+	margin-top: 35px;
+	padding: 10px;
+}
+.header-search {
+	text-align: center;
+}
+.header-user {
+	padding-left: 10px;
+}
+.header-user ul li {
+	display: block;
+	float: right;
+	padding-left: 10px;
+}
+.header-logo {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+/*-----------------------------------------------------------------*/
+
+
+
+
+
+
+/*--------------------------Navigation Bar CSS----------------------*/
+
+.container-fluid > nav {
+	padding: 0;
+	background-color: white;
+	border-top: 2px solid red;
+	height: 60px;
+	width: 100%;
+	box-shadow: 2px 2px 2px #888888;
+}
+/*Navigation Bar fixed when scroll*/
+.nav-fixed {
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+.main-menu {
+	margin: 0;
+	padding: 0;
+}
+.main-menu > li {
+	position: relative;
+	float: left;
+	padding: 15px 15px;
+	height: 58px;
+}
+.main-menu > li:hover {
+	background-color: red;
+}
+.main-menu > li:hover > a {
+	color: white; 
+}
+.main-menu a, .main-menu a:hover,
+.main-menu a:active, .main-menu a:visited {
+	text-decoration: none;
+	color: red;
+}
+/*--------------------------------------------------------------*/
+
+
+
+
+
+/*-----------CSS for hovering link on Navigation Bar------------*/
+
+.sub-main-menu {
+	position: absolute;
+	left: 0px;
+	top: 56px;
+	width: 500%;
+	z-index: 1;
+	background-color: white;
+	border: 1px solid red;
+}
+.sub-main-menu ul {
+	padding: 0;
+}
+.sub-main-menu ul li {
+	text-align: left;
+	width: 50%;
+	float: left;
+	padding: 5px 10px;
+	margin: 0;
+}
+.sub-main-menu ul li:hover {
+	background-color: red;
+}
+.sub-main-menu ul li:hover a {
+	color: white;
+}
+/*-------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------Navigation Bar hidden CSS--------------------*/
+
+.main-menu-hide {
+	position: absolute;
+	top: 147px;
+	width: 100%;
+	z-index: 1;
+	background-color: white;
+	border: 1px solid red;
+}
+.btn-main-menu-hide {
+	display: none;
+}
+.main-menu-hide ul {
+	padding: 0;
+	margin: 0;
+}
+.main-menu-hide > ul > li {
+	text-align: center;
+	display: block;
+	padding: 5px 0;
+	border-bottom: 1px solid red;
+}
+.main-menu-hide > ul > li:hover {
+	background-color: red;
+	color: white;
+}
+.main-menu-hide ul li a {
+	color: red;
+	text-decoration: none;
+}
+/*Navigation Bar fixed when scroll*/
+.main-menu-hide-fixed {
+	position: fixed;
+	top: 40px;
+}
+/*-----------------------------------------------------------*/
+
+
+
+
+/*-----------CSS for hovering link on Navigation Bar hidden----------*/
+
+.main-menu-hide > ul > li:hover > a {
+	color: white;
+}
+.sub-main-menu-hide {
+	background-color: white;
+}
+ul.main-menu-list {
+	margin: 0;
+	padding: 0;
+}
+.main-menu-hide .sub-main-menu-hide ul li {
+	float: left;
+	width: 33.33%;
+	text-align: left;
+	padding: 5px 5px;
+}
+.main-menu-hide .sub-main-menu-hide ul li:hover a {
+	color: white;
+}
+.main-menu-hide .sub-main-menu-hide ul li:hover {
+	background-color: red;
+}
+/*------------------------------------------------------*/
+
+
+
+
+
+/*---------------Carousel phim đề cử------------------*/
+
+.phim-de-cu {
+	padding: 0;
+	margin: 0;
+}
+.carousel-inner > .item > img {
+      width: 100%;
+      margin: auto;
+  	  max-height: 450px;
+ }
+ /*-------------------------------------------------*/
+
+
+
+.content {
+	   font-size: 1em;
+}
+
+/*----------------------Film description area----------------*/
+
+.item_small {
+	 display: inline-block;
+     width:210px;
+     height: 255px;
+     vertical-align:middle;
+     margin:0;
+     padding:3px 1px;
+}
+.item_small img {
+	  display:block;
+      width: 100%;
+      height: 100%;
+      border:none;
+}
+
+/*title and rating slide up*/
+.decsription-hover {
+    padding:0 10px;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    color:white;
+    opacity:0;
+    transform:translateY(-150%);
+    transition:all 0.5s;
+}
+.item_small:hover .decsription-hover {
+	transform:translateY(-400%);
+    opacity:0.9;
+}
+
+/*---title and rating slide down---*/
+.item_small:hover .decsription {
+	display: none;
+}
+.decsription {
+	position: absolute;
+	width:100%;
+	color:white;
+	bottom: 0;
+	text-align: center;
+}
+/*---------------------------------*/
+
+.decsription .title, .decsription-hover .title {
+	font-size: 16px;
+	font-weight:normal!important;
+	text-transform:capitalize;
+}
+
+
+/*-------------blurring effect--------------*/
+.overlay {
+    position: absolute;
+    display:block;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1;
+    opacity:0;
+    transition:all 0.5s;
+}
+.item_small:hover span.overlay  {
+    opacity:0.6;
+    top: 0;
+}
+/*--------------------------------*/
+
+
+
+/*------------------Back-to-top--------------------------*/
+
+#back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display:none;
+    opacity: 0.5;
+    background-color: red;
+    border:none;
+}
+
+.glyphicon-arrow-up {
+	color: white;
+}
+/*--------------------------------------------------------*/
+
+
+/*-------------------footer--------------------*/
+
+footer {
+	height: 130px;
+	background-color: #262626;
+	padding-top: 20px;
+	text-align: center;
+}
+footer small {
+	color: #999999;
+}
+footer ul.copyright {
+	padding-top: 10px;
+	text-align: center;
+}
+footer ul.feedback {
+	padding-top: 10px;
+	text-align: center;
+}
+.fa-stack-1x {
+    color:white;
+}
+.icon-facebook {
+   color:#3b5998;
+}
+
+.icon-twitter {
+    color:#00aced;
+}
+
+/*---------------------------------------------*/
+
+@media only screen and (max-width: 1199px) {
+	.item_small {
+	 	 width:210px;
+   	     height: 253px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.item_small {
+	 	 width: 184px;
+   	     height: 245px;
+	}
+	.main-menu {
+		display: none;
+	}
+	.btn-main-menu-hide {
+		display: inline;
+	}
+	nav {
+		background-color: transparent;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.item_small {
+	 	 width: 152px;
+   	     height: 203px;
+	}
+	.container {
+		width: 620px;
+	}
+	.header-logo, .header-search, .header-user {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+@media only screen and (max-width: 637px) {
+	.item_small {
+	 	 width: 170px;
+   	     height: 227px;
+	}
+	.container {
+		width: 520px;
+	}
+}
+@media only screen and (max-width: 536px) {
+	.item_small {
+	 	 width: 228px;
+   	     height: 304px;
+	}
+	.container {
+		width: 460px;
+	}
+}
+@media only screen and (max-width: 476px) {
+	.item_small {
+	 	 width: 198px;
+   	     height: 264px;
+	}
+	.container {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 416px) {
+	.item_small {
+	 	 width: 280px;
+   	     height: 400px;
+   	     margin-left: 10px;
+	}
+	.container {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.item_small {
+	 	 width: 250px;
+   	     height: 330px;
+   	     margin-left: 10px;
+	}
+	.container {
+		width: 270px;
+	}
+}
+
+
+.item-phim-hot {
+    padding: 10px 0;
+}
+.item-phim-hot .image img {
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.phim-hot-trong-tuan .list-phim-hot {
+    padding: 20px;
+    height: 650px; 
+    background-color:#999999;
+    overflow: scroll;
+    border-radius: 3px;
+}
+.phim-hot-trong-tuan .list-phim-hot li {
+    padding: 5px 0;
+}
+
+
+.chi-tiet-phim {
+	padding: 20px 30px;
+	border-radius: 5px;
+}
+.chi-tiet-phim .image img {
+	border-radius: 5px;
+    border: 2px solid white;
+}
+.decsription-chi-tiet-phim ul li {
+	font-size: 1.5em;
+	padding: 10px 5px;
+}
+
+
+.mo-ta-phim {
+	padding: 20px 30px;
+	border-radius: 5px;
+}
+.binh-luan-phim .title, .mo-ta-phim .title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	padding-bottom: 20px;
+}
+

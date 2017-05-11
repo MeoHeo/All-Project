@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lab2_Bai2_Form</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script>
+
+			function checkDisplayName(){
+				var letters = /^[A-Za-z0-9]+$/;
+				var name = document.form.displayName;
+			   if(name.value.match(letters))
+			     {
+			      return true;
+			     }
+			   else
+			     {
+			     alert("Display name just Only upper/lowercase letters and numbers");
+			     return false;
+			     }				
+			}
+		</script>
+	</head>
+	<body>
+		
+		<form name="form" method="get" action="./htmlToRespone/success.html"> 
+			<h1>Please fill in the following information</h1>
+			<table>
+				<tr>
+					<td onclick="document.getElementById('lastName').focus()">Last Name*</td>
+					<td>
+						<input type="text" id="lastName" required />
+						<label onclick="document.getElementById('firstName').focus()">First name*</label>
+						<input type="text" id="firstName" required/>						
+					</td>
+				</tr>
+				
+				<tr>
+					<td onclick="document.getElementById('email').focus()">Email*</td>
+					<td>
+						<input type="email" placeholder="admin@gmail.com" id="email" required/> 
+						(Each email has only one account)
+					</td>
+				</tr>
+	
+				<tr>
+					<td onclick="document.getElementById('displayName').focus()">Display name</td>
+					<td>
+						<input type="text" id="displayName" pattern="[a-zA-Z0-9]{4,10}"/><br />							
+					</td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td>
+					Only upper/lowercase letters and numbers. The string must also has a minimun of four characters, and a maximum of 							ten.		
+					</td>
+				</tr>
+				
+				<tr>
+					<td onclick="document.getElementById('password').focus()">Password*</td>
+					<td>
+						<input type="password" id="password" required/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td onclick="document.getElementById('passwordRe').focus()"> Re-enter Password*</td>
+					<td>
+						<input type="password" id="passwordRe" required/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Sex*</td>
+					<td>
+						<input type="radio" id="sex" value="man" name="sex" required /> Man
+						<input type="radio" id="sex" value="woman" name="sex" required /> Woman
+					</td>
+				</tr>
+				
+				<tr>
+					<td onclick="document.getElementById('birthday').focus()"> Birthday</td>
+					<td>
+						<input type="date" id="birthday"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td onclick="document.getElementById('color').focus()"> Favorite Color</td>
+					<td>
+						<input type="color" id="color"/>
+					</td>
+				</tr>
+				
+				<td>
+					<input type="submit" value="Submit" id="submit"/>
+				</td>
+			</table>
+		</form>
+
+	</body>
+</html>

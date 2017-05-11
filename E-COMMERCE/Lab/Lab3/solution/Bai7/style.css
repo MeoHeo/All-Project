@@ -1,0 +1,31 @@
+* {
+	margin:0;
+	padding:0
+}
+#contain{
+	width: 60%;
+	background-color: pink;
+	margin: auto;
+	height: 600px;
+}
+#begin{
+	width: 80px;
+	height: 80px;
+	background-image: url(./cat/grey-cat-001.gif);
+	left: 26px;
+	top: -20px;
+}
+#hover{
+	width: 80px;
+	height: 80px;
+	background-image: url(./cat/grey-cat-001.gif);
+	left: 26px;
+	top: -20px;
+}
+#click{
+	width: 80px;
+	height: 80px;
+	background-image: url(./cat/cat3_small.gif);
+	left: 26px;
+	top: -20px;
+}

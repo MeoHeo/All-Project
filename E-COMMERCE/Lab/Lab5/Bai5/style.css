@@ -1,0 +1,125 @@
+* {
+	margin:0;
+	padding:0
+}
+#left{
+	width: 60%;
+	float: left;
+	margin-left: 2%;
+}
+#left >p{
+	color: red;
+	font-size: 2em;
+	font-weight: bold;
+
+}
+#right{
+	width: 35%;
+	float: left;
+	margin-left: 2%;
+}
+#right >p{
+	color: blue;
+	font-size: 2em;
+	font-weight: bold;
+}
+#tShirt{
+	border: dashed;
+	border-color: orange;
+	height: 600px;
+	background-image: url(./img/mens-tshirt-front_1_3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#bordertShirt{
+	margin: 7% 2% 2% 30%;
+	border: 1px dashed;
+	border-color: gray;
+	color: red;
+	width: 40%;
+	height: 82%;
+}
+#bordertShirt >p{
+	width: 45%;
+	font-size: 2em;
+	word-spacing: 65px;
+	margin: 45% 2% 2% 25%;
+	text-align: center;
+	font-weight: bold;
+
+}
+#design{
+	border: dashed;
+	border-color: orange;
+	padding-left: 3%;
+	height: 600px;
+}
+#btnDesign{
+	background-color: unset;
+	border: unset;
+	color: purple;
+	font-size: 1.5em;
+	margin-left: 2%;
+	margin-top: 2%;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.btnCreate{
+	background-color: #e6fff7;
+	width: 35%;
+	font-size: 1.5em;
+	margin-left: 10%;
+	margin-top: 3%;
+}
+#textArea{
+	font-size: 1.5em;
+	padding-top: 2%;
+	padding-left: 1%;
+	margin-left: 12%;
+	margin-top: 5%; 
+}
+#btnOk{
+	width: 25%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 63%;
+}
+.basicColor{
+	width: 5%;
+	height: 20px;
+	margin-left: 8%;
+}
+#color0{
+	background-color: red;
+}
+#color1{
+	background-color: yellow;
+}
+#color2{
+	background-color: orange;
+}
+#color3{
+	background-color: green;
+}
+#color4{
+	background-color: blue;
+}
+#color5{
+	background-color: gray;
+}
+#color6{
+	background-color: pink;
+}
+#btnOk2{
+	width: 25%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 63%;
+}
+#imgF{
+	width: 200px;
+	height: 198px;
+	position: relative;
+	left: 60px;
+	top: 80px;
+}

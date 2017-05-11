@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+.header {
+	height: 50px;
+	background-color: #1a1a1a;
+	box-shadow: -1px 1px 5px;
+	padding: 10px 10px;
+}
+.header div {
+	display: inline-block;
+	height: 100%;
+	width: 10%;
+	font-size: 1.5em;
+	color: white
+}
+.body .menu {
+	background-color: #d9d9d9;
+	box-shadow: 1px 1px 3px;
+}
+.profile-admin .name-admin {
+	font-weight: bold;
+}
+.menu ul.menu-item {
+	list-style-type: none;
+	padding:0;
+	margin: 0;
+	border-top: 2px solid #bfbfbf;
+}
+.menu ul.menu-item li {
+	display: block;
+	text-align: center;
+	padding: 20px;
+	font-size: 1.2em;
+	color: #1a1a1a;
+	border: 2px solid #d9d9d9;
+}
+.menu ul.menu-item li span {
+	font-size:2em;
+}
+.menu ul.menu-item a:hover {
+	text-decoration:none;
+}
+.menu ul.menu-item li:hover {
+	border: 2px solid #bfbfbf;
+	background-color: #e6e6e6;
+}
+.content table td {
+	vertical-align: middle;
+}

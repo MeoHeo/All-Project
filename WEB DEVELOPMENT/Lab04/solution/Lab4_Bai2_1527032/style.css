@@ -1,0 +1,159 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("./images/bg.gif");
+	background-position: center;
+	background-repeat: repeat;
+}
+#main{
+	width: 800px;
+	margin: 0px auto;
+	background-color: white;
+
+}
+	/*--------------PHAN HEADER-----------------*/
+	#header{
+		background-image: url("./images/tilte.jpg");
+		height: 318px;
+
+	}
+	#header >ul{
+		list-style-type: none;
+	    padding: 70px 0px 0px 140px;
+	}
+	#header >ul >li{
+		display: inline;
+		font-size: 1.5em;
+		padding: 10px 50px 10px 50px;
+	}
+	#header >form{
+		margin: -77px 0 0 486px;
+	}
+	#header input{
+		border-radius: 10px;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-decoration: underline;
+		font-style: italic;
+	}
+	/*--------------PHAN CONTENT-----------------*/
+	#content{
+
+	}
+		/*--------------PHAN CONTENT-LEFT-----------------*/
+		#left{
+			width: 160px;
+			height: 600px;
+			float: left;
+			border: solid #EF64A5 0.25px;
+		}
+		#category >h2{
+			border: solid #EF64A5 0.25px;
+			border-top-style: none;
+			border-left-style: none;
+			border-right-style: none;
+			text-align: center;
+		}
+		#category >ul{
+			list-style-type: none;
+			padding: 10px 0px 0px 30px;
+		}
+		#category >ul>li{
+			padding-bottom: 20px;
+		}
+		#topProducts >ul{
+			list-style-type: none;
+			padding: 10px 0px 0px 30px;
+		}
+		#topProducts >ul>li{
+			padding-bottom: 20px;
+		}
+		#topProducts >h2{
+			border: solid #EF64A5 0.25px;
+			border-left-style: none;
+			border-right-style: none;
+			text-align: center;
+		}
+		#topProducts{
+			border-bottom: solid #EF64A5 0.25px;
+		}
+		/*--------------PHAN CONTENT-CENTER-----------------*/
+		#center{
+			width: 480px;
+			height: 600px;
+			float: left;
+			border-top: solid #EF64A5 0.25px;
+			border-bottom: solid #EF64A5 0.25px;
+		}
+		.image{
+			border: solid #EF64A5 0.25px;
+			width: 155px;
+			height: 200px;
+			float:left;
+			padding: 20px 0px 0px 2px;
+			margin: 30px 0px 0px 4px;
+		}
+		.image >p{
+			text-align: center;
+		}
+		.image >button{
+			text-align: center;
+		}
+		#choose{
+			width: 200px;
+			height: 30px;
+			float: left;
+			border: solid #EF64A5 0.25px;
+			border-radius: 5px;
+			margin:30px 0px 0px 137px;
+		}
+		#choose >ul{
+			list-style-type: none;
+			text-align: center;
+		}
+		#choose >ul >li{
+			display: inline;
+		}
+		#choose >ul>li>a{
+			text-decoration: none;
+			line-height: 30px;
+			font-size: 26px;
+			border-right: solid #EF64A5 0.25px;
+			padding: 0px 3px 0px 6px;
+		}
+		#exp{
+			border-right: none;
+		}
+		/*--------------PHAN CONTENT-RIGHT-----------------*/
+		#right{
+			width: 160px;
+			height: 600px;
+			float: left;
+			border: solid #EF64A5 0.25px;
+			padding: 20px 5px 5px 4px;
+		}
+		#clear{
+			clear:both;
+		}
+	/*--------------PHAN FOOTER-----------------*/
+	#footer{
+		height: 200px;
+	}
+	#cat{
+		float: left;
+	}
+	#info{
+		float: left;
+		padding: 50px 5px 5px 70px;
+	}
+	#info >p{
+		font-size: 2em;
+	}
+	#info >a{
+		padding: 10px 5px 5px 12px;
+	}
+

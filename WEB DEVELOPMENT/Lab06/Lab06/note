@@ -1,0 +1,15 @@
+$a="abc"
+$ac='abc'
+
+$b=1
+$a="abc $b" --> abc1
+$ac='abc $b' -->abc$b
+
+$a = 1 same
+$a = '1' 
+
+"12ab" + "a" = 12 + 0 = 12
+
+$a = 1
+a = $a + $a = 2
+a = $a . $a = 11

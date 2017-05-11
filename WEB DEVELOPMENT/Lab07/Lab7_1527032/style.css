@@ -1,0 +1,19 @@
+table,th,td{
+	text-align: center;
+	margin-left: 5%;
+	border: solid 1px;
+	border-collapse: collapse;
+}
+table{
+	width: 50%
+}
+p{
+	font-weight: bold;
+	color:red;
+}
+span{
+	margin-right: 2%;
+}
+input{
+	margin: 1%;
+}

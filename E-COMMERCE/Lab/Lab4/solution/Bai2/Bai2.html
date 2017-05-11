@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lab4_Bai2</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+
+		<!-- thu vien cho jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div class="form">
+			<p>Please fill in the following information</p>
+			<form id="formId" method="POST" action="aspFile.asp">
+				<table>
+					<tr>
+						<td>Last Name <sup>*</sup>
+						</td>
+
+						<td>
+							<input type="text" name = "lastName" id="lastName" required>
+
+							Fist name <sup>*</sup>
+
+							<input type="text" name="firstName" id="firstName" required>
+
+						</td>
+					</tr>
+					 <tr>
+						<td>Email<sup>*</sup></td>
+						<td>
+							<input type="email" name="email" id="email" placeholder="admin@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+						</td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td>
+							<textarea id="address" name="address" cols="60" rows="5"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Sex</td>
+						<td>
+							<input type="radio" name="sex" value="Man" id="r1"> Man
+							<input type="radio" name="sex" value="Woman" id="r2"> Woman
+						</td>
+					</tr>
+
+					<tr>
+						<td>Birthday</td>
+						<td>
+							<input type="date" name="birthday" id="birthday">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Job <sup>*</sup></td>
+						<td>
+							<select name="job" id="job" onchange="addOptionPay()" required>
+								<option disabled selected value></option>
+								<option value="student">Student</option>
+								<option value="lecturer">Lecturer</option>
+								<option value="other">Other</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td>You want to pay for <sup>*</sup></td>
+
+						<td>
+							<select  name="pay" id="pay" required>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Picture(4*6)<sup>*</sup></td>
+
+						<td>
+							<input type="file" name="picture" id="picture" required>
+						</td>
+
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="btn_review" value="Review">
+						</td>
+					</tr> 
+				</table>
+			</form>
+
+		</div>
+		<div class="form" id="review">
+			<p>Here is your information after click review</p>
+			<div id="info"></div>
+		</div>
+		<div style="clear: both;"></div>
+	</body>
+</html>

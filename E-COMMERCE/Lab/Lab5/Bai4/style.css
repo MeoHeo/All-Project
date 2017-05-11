@@ -1,0 +1,27 @@
+* {
+	margin:0;
+	padding:0
+}
+body{
+	background-image: url(NotePaper.png);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+#contain{
+	margin: 15% 7% 8% 40%;
+	color: purple;
+	font-size: 1.5em;
+	line-height: 200%;
+	font-weight: bold;
+}
+#task{
+	width: 40%;
+	font-size: 1.0em;
+}
+hr{
+	width: 40%;
+	border: 2px dashed gray;
+}

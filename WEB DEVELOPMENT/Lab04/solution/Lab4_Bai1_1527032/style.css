@@ -1,0 +1,159 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;/* tinh kich thuoc margin+padding cho the div*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+	background-image:url("./images/bg-body.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color: rgb(232,248,249);
+}
+#main{
+	width: 700px;
+	margin: auto;
+}
+div.header{
+	height: 140px;
+	background-image:url("./images/bg-header.jpg");
+	background-position: center top;	
+}
+p.title{
+	color: rgb(180,177,175);
+	font-style:italic;
+	font-size: 2em;
+	background-color: unset;
+	padding:40px;
+}
+
+#menu{
+	background-image:url("./images/bg-menu.png");
+	height:35px;
+}
+#menu >ul{
+	list-style-type: none;
+	background-color: unset;
+}
+#menu >ul>li{
+	display:inline;
+	background-color: unset;
+	color: white;
+	padding: 10px;
+	line-height: 35px
+}
+#body{
+	background-color: white;
+}
+/*-----------------body-left------------------------*/
+#left{
+	float:left;
+	width: 500px;
+	background-color: white;
+	padding-bottom: 100px;
+}
+#image{
+	background-image: url("./images/bg-ad-top.png");
+	height:72px;
+	width:480px;
+}
+#content{
+	background-color: white;
+	width: 500px;
+	padding-left: 5px;
+	padding-right: 10px;
+	text-align: justify;
+}
+#content >p{	
+	background-color: white;
+}
+#ptitle{
+	color: rgb(195,211,145);
+	font-size:1.5em;
+	padding: 10px 0px 0px 0px;
+}
+#ptime{
+	color:rgb(215,208,203);
+	font-size:0.7em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+#comment{
+	width: 500px;
+	background-color: white;
+	color:rgb(146,213,232);
+}
+#comment > img{
+	background-color: white;
+	margin-left:5px;
+	/* canh hinh nam giua div*/
+	vertical-align: middle;
+}
+/*-----------------body-right------------------------*/
+#right{
+	width: 200px;
+	float:left;
+	background-color: white;
+}
+
+.clear{
+	clear:both;
+}
+#bgfeed{
+	background-image: url("./images/bg-feed.gif");
+	background-position: top;
+	background-color: rgb(240,240,240);
+	width: 152px;
+	height: 25px;
+	overflow: hidden;
+}
+#bgfeed > img{
+	margin: 0px 0px 0px 25px;
+	/*tao transition khi dua con chuot vao image*/
+	-webkit-transition-property: height; /* Safari */
+	-moz-transition-property:height;
+    -webkit-transition-duration: 2s; /* Safari */
+    -moz-transition-duration: 2s;
+	transition-property: height;
+	transition-duration: 2s;
+}
+/*Set thay doi*/
+#bgfeed > img:hover{
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%); /* dich hinh len tren theo chieu doc len 50%*/
+	-webkit-transition: 0s ease;
+	-moz-transition: 0s ease;
+	transition: 0s ease;
+}
+
+#link{
+	background-color: unset;
+}
+#link>ul{
+	background-color: rgb(240,240,240);
+	width: 152px;
+	padding-bottom: 20px;
+	list-style-type: none;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+#link>ul>li{
+	background-color: rgb(240,240,240);
+	padding-left: 5px;
+	padding-bottom: 5px;
+
+}
+/*-----------------footer------------------------*/
+#footer{
+	height: 100px;
+	background-image: url("./images/bg-footer.jpg");
+	color: white;
+}
+#footer>p{
+	padding:40px; 
+	background-color: unset;
+}
+

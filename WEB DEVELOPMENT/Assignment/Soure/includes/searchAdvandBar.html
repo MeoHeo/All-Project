@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <style type="text/css">
+        .form-group {
+            padding-right: 15px;
+        }
+    </style>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Phim mới nhất | phim hành động | phim bộ | phim lẻ </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="javascript.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div>
+       <form class="form-inline"action = "./danhsachphim.php" method="get">
+           <div class="form-group">
+               <label>Hình thức</label>
+               <select class="form-control" name="hinhthuc">
+                    <option value=0>Tất cả</option>
+                    <option value="phimle">Phim lẻ</option>
+                    <option value="phimbo">Phim bộ</option>
+                    <option value="phimchieurap">Phim chiếu rạp</option>
+               </select>
+           </div>
+           <div class="form-group">
+               <label>Ngôn ngữ</label>
+               <select class="form-control" name="ngonngu">
+                    <option value=0>Tất cả</option>
+                    <option value=1>Tiếng việt</option>
+                    <option value=2>Lồng tiếng</option>
+                    <option value=3>Thuyết minh</option>
+                    <option value=4>ViệtSub</option>
+               </select>
+           </div>
+           <div class="form-group">
+               <label>Thể loại</label>
+               <select class="form-control" name="theloai">
+                    <option value=0>Tất cả</option>
+                    <option value=1>Phim hành động</option>
+                    <option value=2>Phim viễn tưởng</option>
+                    <option value=3>Phim võ thuật</option>
+                    <option value=4>Phim tâm lý</option>
+                    <option value=5>Phim tài liệu</option>
+                    <option value=6>Phim cổ trang</option>
+                    <option value=7>Phim kinh dị</option>
+                    <option value=8>Phim hoạt hình</option>
+                    <option value=9>Phim hài hước</option>
+                    <option value=10>Phim tình cảm-lãng mạn</option>              
+               </select>
+           </div>
+           <div class="form-group">
+               <label>Quốc gia</label>
+               <select class="form-control" name="quocgia">
+                    <option value=0>Tất cả</option>
+                    <option value=1>Việt Nam</option>
+                    <option value=2>Hông Kông</option>
+                    <option value=3>Mỹ</option>
+                    <option value=4>Đài Loan</option>
+                    <option value=5>Hàn Quốc</option>
+                    <option value=6>Nhật Bản</option>
+                    <option value=7>Ấn Độ</option>
+                    <option value=8>Thái Lan</option>
+                    <option value=9>Nước khác</option>
+                </select>
+            </div>
+            <div class="form-group">
+               <label>Năm phát hành</label>
+               <select class="form-control" name="namphathanh">
+                    <option value="0">Tất cả</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="truoc2010">Trước 2010</option>
+                </select>
+            </div>
+            <input class="btn btn-danger" type="submit" value="Tìm phim">
+       </form>
+   </div>
+</body>
+</html>

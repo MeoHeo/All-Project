@@ -1,0 +1,77 @@
+* {
+	margin:0;
+	padding:0
+}
+#cover{
+	margin: auto;
+	width: 70%;
+}
+table, tr, td, th{
+	text-align: center;
+	padding: 1% 0% 2% 2%;
+	
+}
+table{
+	width: 100%;
+}
+th,td{
+	width: 33%;
+}
+th,button{
+	color: white;
+	border: none;
+}
+button{
+	width: 100%;
+	cursor: pointer;
+}
+#r1 td >b{
+	font-size: 1.5em;
+}
+span{
+	position: absolute;
+}
+span sup{
+	display: block;
+	position: relative;
+	text-align: left;
+	top: 5px;
+	font-weight: bold;
+	
+}
+span sub{
+	display: block;
+	position: relative;
+	left: 2px;
+	top: 0px;
+	
+}
+.Beginner{
+	background-color: green;
+	border-top-left-radius:1em;
+}
+.Advanced{
+	background-color: blue;
+}
+.Ultimate{
+	background-color: orange;
+	border-top-right-radius:1em;
+}
+.BeginnerSign{
+	border-bottom-left-radius: 1em;
+	background-color: green;
+}
+.AdvancedSign{
+	background-color: blue;
+}
+.UltimateSign{
+	background-color: orange;
+	border-bottom-right-radius: 1em;
+}
+button{
+	background-color: unset;
+	font-weight: bold;
+}
+#r2,#r4{
+	background-color: gray;
+}
