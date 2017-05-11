@@ -1,0 +1,16 @@
+﻿<resources>
+    <string name="app_name">Travel Assistant</string>
+    <string name="spinnerPrompt">Choose One</string>
+
+    <string name="dia_danh_text">Địa danh</string>
+    <string name="nha_hang_text">Nhà hàng</string>
+    <string name="khach_san_text">Khách sạn</string>
+    <string name="tour_text">Tour</string>
+    <string name="dat_tour_text">Đặt tour</string>
+
+    <string name="title_activity_detail_service">Map</string>
+
+    <!--Default Text-->
+    <string name="item_address_default_text">Địa chỉ</string>
+    <string name="item_description_default_text">Tên</string>
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:id="@+id/activity_detail_tour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="nhom33.travelassistant.DetailTourActivity"
+        android:weightSum="1">
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:id="@+id/appBarLayoutDetailBooking"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar_detail_booking"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="56dp"-->
+                <!--android:background="?attr/colorPrimary"-->
+                <!--app:popupTheme="@style/AppTheme.PopupOverlay">-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+        <include
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_of_image"
+            android:background="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width_of_icon"
+                android:layout_height="@dimen/height_of_icon"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/marker"
+                android:id="@+id/iconMarker"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:maxWidth="@dimen/width_of_texticon"
+                android:layout_toRightOf="@id/iconMarker"
+                android:id="@+id/position"
+                android:text="Dia diem"
+                android:textSize="@dimen/textsize_of_icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/width_of_icon"
+                    android:layout_height="@dimen/height_of_icon"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/airplane"
+                    android:id="@+id/airplane"
+                    android:layout_gravity="right"/>
+
+                <ImageView
+                    android:layout_width="@dimen/width_of_icon"
+                    android:layout_height="@dimen/height_of_icon"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/car"
+                    android:id="@+id/car"
+                    android:layout_gravity="right"/>
+                <ImageView
+                    android:layout_width="@dimen/width_of_icon"
+                    android:layout_height="@dimen/height_of_icon"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/motor"
+                    android:id="@+id/motor"
+                    android:layout_gravity="right"/>
+
+                <ImageView
+                    android:layout_width="@dimen/width_of_icon"
+                    android:layout_height="@dimen/height_of_icon"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/ship"
+                    android:id="@+id/ship"
+                    android:layout_gravity="right"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width_of_icon"
+                android:layout_height="@dimen/height_of_icon"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/time"
+                android:id="@+id/iconTime"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:maxWidth="@dimen/width_of_texticon"
+                android:text="Thoi gian khoi hanh"
+                android:textSize="@dimen/textsize_of_icon"
+                android:id="@+id/timedepart"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width_of_icon"
+                android:layout_height="@dimen/height_of_icon"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/duration"
+                android:id="@+id/iconDuration"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:maxWidth="@dimen/width_of_texticon"
+                android:text="Thoi gian tour"
+                android:textSize="@dimen/textsize_of_icon"
+                android:id="@+id/duration"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width_of_icon"
+                android:layout_height="@dimen/height_of_icon"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/price"
+                android:id="@+id/iconPrice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:maxWidth="@dimen/width_of_texticon"
+                android:text="Gia tien"
+                android:textSize="@dimen/textsize_of_icon"
+                android:id="@+id/price"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@drawable/button_layout"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:text="@string/dat_tour_text"
+            android:layout_weight="0.05"
+            android:id="@+id/btnDatTour"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="Lich Trinh"
+            android:id="@+id/schedule"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
