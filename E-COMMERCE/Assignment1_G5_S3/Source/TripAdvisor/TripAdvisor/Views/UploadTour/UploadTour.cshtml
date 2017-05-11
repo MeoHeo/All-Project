@@ -1,0 +1,123 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container" id="uploadContainer">
+        <ul class="breadcrumb linkToBack">
+            <li><a href="#">Trip&Go</a></li>
+            <li class="active">Upload Tour</li>
+        </ul>
+
+        <div class="row homeInfo shareLinkform">
+
+                <form class="upload-row" action="mailto:'1527032@hcmut.edu.vn'" method="post">
+                        <button class="btn btn-primary btn-lg btn-block btnTopic" style="width:30%!important"> <i class="fa fa-share-alt" aria-hidden="true"></i> Share link </button>
+                        <table class="shareLinkTable">
+                            <tr>
+                                <td>
+                                    <span>Link: </span>
+                                </td>
+                                <td>
+                                    <input class="linkInput" type="text" placeholder="Add link here" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Review:</span>
+                                </td>
+                                <td>
+                                    <textarea class="areaReview" rows="5" placeholder="Your review"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" class="btn btn-primary btn-block submitUpload" value="Send" />
+                                </td>
+                            </tr>
+                        </table>
+                    
+                </form>
+          
+        </div>
+
+        <div class="row homeInfo shareLinkform">
+            <form class="upload-row" action="mailto:'1527032@hcmut.edu.vn'" method="post">
+                @*<textarea  rows="5" placeholder="Your review"></textarea>*@
+                <button class="btn btn-primary btn-lg btn-block btnTopic" style="width:30%!important"> <i class="fa fa-upload" aria-hidden="true"></i> Upload your tour </button>
+                <table class="shareLinkTable">
+                    <tr>
+                        <td><span>Name of tour</span></td>
+                        <td><input class="linkInput" type="text" required /></td>
+                    </tr>
+                    <tr>
+                        <td><span>Star rating</span></td>
+                        <td>
+                            <select class="linkInput" style="max-width:100%!important;">
+                                <option value="1">1 star</option>
+                                <option value="2">2 stars</option>
+                                <option value="3">3 stars</option>
+                                <option value="4">4 stars</option>
+                                <option value="5">5 stars</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Reviews</span></td>
+                        <td>
+                            <textarea class="areaReview" rows="5" placeholder="Your review"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Location</span></td>
+                        <td>
+                            <input class="linkInput" type="text" required />                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Duration</span></td>
+                        <td>
+                            <input class="linkInput" type="text" required /> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span> Initial price</span></td>
+                        <td>
+                            <input  class="linkInput" type="number" /> USD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Sale price</span></td>
+                        <td>
+                            <input  class="linkInput" type="number" /> USD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Infomation</span></td>
+                        <td>
+                            <textarea class="areaReview" rows="5" placeholder="Your review"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Main Image</span></td>
+                        <td>
+                            <input type="file" placeholder="Add link main image for your tour" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span> Other Image</span></td>
+                        <td>
+                            <input type="file" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" class="btn btn-primary btn-block submitUpload" value="Send" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+

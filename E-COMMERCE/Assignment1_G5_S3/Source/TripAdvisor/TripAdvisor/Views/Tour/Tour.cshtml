@@ -1,0 +1,134 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Tour";
+}
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '765425070261833',
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/Home/HomePage">Trip&Go</a></li>
+            <li class="active">Tour</li>
+        </ul>
+        <div class="row">
+            <!--        Left-->
+            <div class="tour_category col-md-2 col-xs-2 col-lg-2 col-sm-2">
+                <h3>Continental</h3>
+                <div class="list-group">
+                    <form action="/action_page.php" method="get">
+                        <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car
+                        <br>
+                    </form>
+                </div>
+                <h3>Price</h3>
+                <div class="list-group">
+                    <form action="/action_page.php" method="get">
+                        <input type="checkbox" name="vehicle" value="Bike"> Under 100$
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Bike"> Under 200$
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Bike"> Under 500$
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Car" checked="checked"> VIP
+                        <br>
+                    </form>
+                </div>
+                <h3>Update</h3>
+                <div class="list-group">
+                    <form action="/action_page.php" method="get">
+                        <input type="checkbox" name="vehicle" value="Bike"> Newest
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Bike"> Popular
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Car" checked="checked"> Top seller
+                        <br>
+                    </form>
+                </div>
+                <h3>Review</h3>
+                <div class="list-group">
+                    <form action="/action_page.php" method="get">
+                        <input type="checkbox" name="vehicle" value="Bike"> Five stars
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Bike"> Four stars
+                        <br>
+                        <input type="checkbox" name="vehicle" value="Bike"> Above avarage
+                        <br>
+                    </form>
+                </div>
+            </div>
+
+            <!--        Right-->
+            <div class="tour_list">
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <!--                    <img class="img-responsive" src="https://cache-graphicslib.viator.com/graphicslib/destination/las-vegas-133300.jpg" alt="Chania">-->
+                    <img class="img-responsive" src="http://lorempixel.com/g/1043/316/" alt="Chania">
+                    <h3>TOUR NAME</h3>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="form-group row sort_by">
+                                <label for="input" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 control-label">Sort by:</label>
+                                <div class="col-sm-9">
+                                    <select name="" id="input" class="form-control" required="required">
+                                        <option value="newest">Newest</option>
+                                        <option value="most_popular">Most Popular</option>
+                                        <option value="most_rating">Most Rating</option>
+                                        <option value="most_viewing">Most Viewing</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 facebook">
+                            <div class="fb-like" data-href="https://www.facebook.com/TripAdvisor/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row viewing">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                            <h4>View 1 of 3</h4>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 tour_pagination">
+                            <ul class="pagination pagination-md">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    @*row*@
+                    @Html.Partial("_ItemTour")
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+

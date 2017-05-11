@@ -1,0 +1,441 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--  Like facebook button-->
+<div id="fb-root"></div>
+<script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '765425070261833',
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Private</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li class="active">Vacation</li>
+    </ul>
+    <div class="row" id="tour_detail">
+        <!--        Left-->
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="row">
+                <h1 id="tour_detail_title">Grand Canyon and Hoover Dam Day Trip from Las Vegas with Optional Skywalk</h1>
+            </div>
+            <div class="row" id="tour_detail_head_info">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="rating" id="tour_detail_rating">
+                        <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                        <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                        <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                        <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                        <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 block" id="tour_detail_review">
+                    <div class="review_quantity"><a href="#">4271 reviews</a></div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="tour_code">1384WGJQP</div>
+                </div>
+            </div>
+            <div class="row pad_top_bottom_10px">
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <label for="">Location: </label><span class="location">Las Vegas, Nevada</span>
+                </div>
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <label for="">Duration: </label><span class="location">12 hours (approx.)</span>
+                </div>
+            </div>
+            <div class="row" id="tour_detail_image">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="tour_detail_main_image">
+                    <img src="http://lorempixel.com/480/307/" class="img-thumbnail" alt="">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="row no-margin-left-right">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-pad-left-right">
+                            <img src="http://lorempixel.com/110/100/" class="img-thumbnail" alt="">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-pad-left-right">
+                            <img src="http://lorempixel.com/110/100/" class="img-thumbnail" alt="">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-pad-left-right">
+                            <img src="http://lorempixel.com/110/100/" class="img-thumbnail" alt="">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-pad-left-right">
+                            <img src="http://lorempixel.com/110/100/" class="img-thumbnail" alt="">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-pad-left-right">
+                            <img src="http://lorempixel.com/110/100/" class="img-thumbnail" alt="">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-pad-left-right">
+                            <img src="http://lorempixel.com/110/100/" class="img-thumbnail" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="tour_category col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Item 1</a>
+                        <a href="#" class="list-group-item">Item 2</a>
+                        <a href="#" class="list-group-item">Item 3</a>
+                        <a href="#" class="list-group-item">Item 1</a>
+                        <a href="#" class="list-group-item">Item 2</a>
+                        <a href="#" class="list-group-item">Item 3</a>
+                        <a href="#" class="list-group-item">Item 1</a>
+                        <a href="#" class="list-group-item">Item 2</a>
+                        <a href="#" class="list-group-item">Item 3</a>
+                        <a href="#" class="list-group-item active">Item 1</a>
+                        <a href="#" class="list-group-item">Item 2</a>
+                        <a href="#" class="list-group-item">Item 3</a>
+                        <a href="#" class="list-group-item">Item 1</a>
+                        <a href="#" class="list-group-item">Item 2</a>
+                        <a href="#" class="list-group-item">Item 3</a>
+                        <a href="#" class="list-group-item">Item 1</a>
+                        <a href="#" class="list-group-item">Item 2</a>
+                        <a href="#" class="list-group-item">Item 3</a>
+                    </div>
+                    <img src="http://lorempixel.com/220/197/" alt="">
+                    <img src="http://lorempixel.com/220/197/" alt="">
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="contentDetailTour">
+                    <div class="row">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Information</button>
+                            <button type="button" class="btn btn-info">Policy</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form action="">
+                            <fieldset>
+                                <legend>special offer</legend>
+                                Book with us and save 39% com;pared to another travel
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="row">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolore modi deserunt obcaecati aliquid ipsam enim, repellat nesciunt reprehenderit delectus aut explicabo commodi alias quam fuga, voluptatum dignissimos illo fugit.
+                    </div>
+                    <div class="row">
+                        <h2><span class="glyphicon glyphicon-star"></span>Highlights</h2>
+                        <ul>
+                            <li>Day trip to the Grand Canyon West Rim by coach from Las Vegas</li>
+                            <li>Day trip to the Grand Canyon West Rim by coach from Las Vegas</li>
+                            <li>Opt to check out the Grand Canyon Skywalk</li>
+                            <li>Enjoy scenic views over the Grand Canyon from Eagle Point and Guano Point</li>
+                            <li>Upgrade to include a helicopter and boat combo</li>
+                            <li>Relax with pickup and drop-off from select Las Vegas hotels</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h2><span class="glyphicon glyphicon-star"></span>Why our insiders chose this tour</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae perspiciatis dolores consequatur earum, molestias enim quasi aut repellat. Assumenda incidunt soluta qui officiis expedita, officia cumque molestias exercitationem minus. Et.
+                    </div>
+                    <hr class="divider">
+                    <div class="row">
+                        <h2><span class="glyphicon glyphicon-star"></span>Why our insiders chose this tour</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae perspiciatis dolores consequatur earum, molestias enim quasi aut repellat. Assumenda incidunt soluta qui officiis expedita, officia cumque molestias exercitationem minus. Et.
+                    </div>
+                    <div class="row">
+                        <h2><span class="glyphicon glyphicon-star"></span>Why our insiders chose this tour</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae perspiciatis dolores consequatur earum, molestias enim quasi aut repellat. Assumenda incidunt soluta qui officiis expedita, officia cumque molestias exercitationem minus. Et.
+                    </div>
+                    <div class="row">
+                        <span>Please note: </span>The listed price does not include a $10 processing fee, payable at the time of check-in. There is an additional $10 fuel fee for the Helicopter/Boat and Helicopter/Boat/Skywalk option, payable at the time of check-in. These fees are required by our local supplier and are not within our control. Read more about Grand Canyon and Hoover Dam Day Trip from Las Vegas with Optional Skywalk | Viator at: https://www.viator.com/tours/Las-Vegas/Grand-Canyon-and-Hoover-Dam-Day-Trip-from-Las-Vegas-with-Optional-Skywalk/d684-3951WESTDLX?pub=vcps
+                    </div>
+                    <div class="row">
+                        <span>Bonus offer! </span>All paying passengers will receive a voucher allowing admission to Marvel Avengers S.T.A.T.I.O.N at the Treasure Island Hotel and Casino for up to four (4) passengers. All tickets are subject to a $5 service fee payable at the time of redemption. Please note: Offer is subject to change. Read more about Grand Canyon and Hoover Dam Day Trip from Las Vegas with Optional Skywalk | Viator at: https://www.viator.com/tours/Las-Vegas/Grand-Canyon-and-Hoover-Dam-Day-Trip-from-Las-Vegas-with-Optional-Skywalk/d684-3951WESTDLX?pub=vcps
+                    </div>
+                    <hr class="divider">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <span class="glyphicon glyphicon-star"></span>Customer Reviews
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <a href="www.google.com.vn">See the review<span class="glyphicon glyphicon-play"></span></a>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <hr class="divider">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                            <div><a href="#">Jasmine W</a></div>
+                            <span class="rating">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                            </span>
+                            <p class="timeComment">2 March 2017</p>
+                            <br>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum beatae aperiam repellendus recusandae laudantium voluptatem sed dolore iure, natus, quia doloribus reiciendis sapiente voluptates voluptate ratione corrupti officia? Repellendus.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr class="divider">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                            <div><a href="#">Jasmine W</a></div>
+                            <span class="rating">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                            </span>
+                            <p class="timeComment">2 March 2017</p>
+                            <br>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum beatae aperiam repellendus recusandae laudantium voluptatem sed dolore iure, natus, quia doloribus reiciendis sapiente voluptates voluptate ratione corrupti officia? Repellendus.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr class="divider">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                            <div><a href="#">Jasmine W</a></div>
+                            <span class="rating">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                            </span>
+                            <p class="timeComment">2 March 2017</p>
+                            <br>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum beatae aperiam repellendus recusandae laudantium voluptatem sed dolore iure, natus, quia doloribus reiciendis sapiente voluptates voluptate ratione corrupti officia? Repellendus.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr class="divider">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                            <div><a href="#">Jasmine W</a></div>
+                            <span class="rating">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                            </span>
+                            <p class="timeComment">2 March 2017</p>
+                            <br>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum beatae aperiam repellendus recusandae laudantium voluptatem sed dolore iure, natus, quia doloribus reiciendis sapiente voluptates voluptate ratione corrupti officia? Repellendus.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr class="divider">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                            <div><a href="#">Jasmine W</a></div>
+                            <span class="rating">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                                <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+                            </span>
+                            <p class="timeComment">2 March 2017</p>
+                            <br>
+                            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum beatae aperiam repellendus recusandae laudantium voluptatem sed dolore iure, natus, quia doloribus reiciendis sapiente voluptates voluptate ratione corrupti officia? Repellendus.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--        Right-->
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="row special_offer_head">
+                <div>
+                    <h3 class="center">SPECIAL OFFER</h3>
+                </div>
+                <div class="center">
+                    <strong style="font-size:1em;color:#888;text-decoration:line-through;color:#FF9393">&dollar;799.48</strong><strong>  Save &dollar;218.64</strong>
+                </div>
+            </div>
+            <div class="row center special_offer_content pad_top_bottom_10px">
+                <p>From USD</p>
+                <div>
+                    <strong style="font-size:1.9em"><sup style="font-size:0.5em">&dollar;</sup>588.61</strong>
+                </div>
+                <div><a href="www.google.com.vn">View Price Calendar<span class="glyphicon glyphicon-play"></span></a></div>
+            </div>
+            <div class="row pad_10px">
+                <table class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <tr>
+                        <td>
+                            <label for="input" class="control-label pad_10px">Quantity:</label>
+                        </td>
+                        <td>
+                            <div class="pad_10px " id="select_quantity">
+                                <select name="" id="quantity" class="form-control" required="required">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="input" class="control-label pad_10px">Date: </label>
+                        </td>
+                        <td>
+                            <div class='input-group date pad_10px' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                            <script>
+                                    $(function () {
+                                        $('#datetimepicker1').datetimepicker();
+                                    });
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <hr class="divider">
+            <h4 class="center" id="low_price_guarantee">LOW PRICE GUARANTEE</h4>
+            <div class="center">
+                <a href="/Tour/ReviewOrder" type="button" class="btn btn-warning btn_check_availability"><span class="glyphicon glyphicon-ok"></span> Checkout</a>
+                <button type="button" class="btn btn-warning btn_add_to_cart" style="border-radius: 20px !important;"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+                <script>
+                        var numCard = 0;
+                        $('.btn_add_to_cart').click(function () {
+                            var quantity = parseInt($('#quantity :selected').text());
+                            numCard=numCard+quantity;
+                            $('#numTourInCard').html(numCard);
+                        })
+                </script>
+                <button type="button" class="btn btn-warning btn_wishlist" style="border-radius: 20px !important;"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <div class="facebook">
+                    <div class="fb-like" data-href="https://www.facebook.com/TripAdvisor/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <h4 class="bold">Book similar things to do: </h4>
+                <img src="http://lorempixel.com/367/307/" class="img-rounded" alt="">
+                <div class="pad_10px"><a href="#">All-Access Vegas Nightclub Pass Including Pool Parties</a></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <button type="button" class="btn btn-warning btn_see_detail">See Details</button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    From USD
+                    <br>
+                    <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup>588.61</strong>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <img src="http://lorempixel.com/367/307/" alt="">
+                <div><a href="#">All-Access Vegas Nightclub Pass Including Pool Parties</a></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <button type="button" class="btn btn-warning btn_see_detail">See Details</button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    From USD
+                    <br>
+                    <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup>588.61</strong>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <img src="http://lorempixel.com/367/307/" alt="">
+                <div><a href="#">All-Access Vegas Nightclub Pass Including Pool Parties</a></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <button type="button" class="btn btn-warning btn_see_detail">See Details</button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    From USD
+                    <br>
+                    <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup>588.61</strong>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <img src="http://lorempixel.com/367/307/" alt="">
+                <div><a href="#">All-Access Vegas Nightclub Pass Including Pool Parties</a></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <button type="button" class="btn btn-warning btn_see_detail">See Details</button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    From USD
+                    <br>
+                    <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup>588.61</strong>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <img src="http://lorempixel.com/367/307/" alt="">
+                <div><a href="#">All-Access Vegas Nightclub Pass Including Pool Parties</a></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <button type="button" class="btn btn-warning btn_see_detail">See Details</button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    From USD
+                    <br>
+                    <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup>588.61</strong>
+                </div>
+            </div>
+            
+        </div>
+
+        @*add commennt*@
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="row">
+                <div class="tour_category col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    @Html.Partial("_PartialAddComment")
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+    </div>
+</div>

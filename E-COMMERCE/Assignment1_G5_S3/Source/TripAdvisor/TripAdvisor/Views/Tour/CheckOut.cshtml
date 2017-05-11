@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewBag.Title = "CheckOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string emailPattern = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{1,3}$";
+}
+
+    <div class="container">
+        <div class="row pad_top_bottom_10px">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <strong>Booking</strong> (step 3 of 3)
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <span>1</span> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to Cart ----------------->>
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <span>2</span> <i class="fa fa-eye" aria-hidden="true"></i> Review order ----------------->>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="color:red!important;font-weight:bold!important;">
+                <span class="numberCircle">3</span> <i class="fa fa-check" aria-hidden="true"></i> Checkout
+            </div>
+        </div>
+        <div class="row pad_10px" id="secure_checkout">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                Secure checkout
+                <br> Items in cart: <span id="item_in_cart">1</span>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                Current cart total USD
+                <br>
+                <strong style="font-size:1em;color:#d9534f"><sup>&dollar;</sup>142.99</strong>
+            </div>
+        </div>
+        <div class="row customer_info_form">
+            <h2 class="no-margin-top-bottom pad_top_bottom_10px">Customer Info</h2>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <h5>Time</h5>
+                <p class="divider">25 Mar 2017</p>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <h5>Tour</h5>
+                <p class="divider">Frand Canyon and Hoover Dam Day Trip from Las Vegas with Optional Skywalk</p>
+            </div>
+            <form action="mailto:1527032@hcmut.edu.vn" method="post" class="form_checkout">
+                <legend>Fill Form</legend>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="c_fname">First Name *</label>
+                        <input type="text" class="form-control" id="c_fname" placeholder="Input field" required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="c_lname">Last Name *</label>
+                        <input type="text" class="form-control" id="c_lname" placeholder="Input field" required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="text" class="form-control" id="email" placeholder="Input field" pattern=@emailPattern required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="number" class="form-control" id="phone" placeholder="Input field" required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="hotelAddress">Hotel's Address *</label>
+                        <input type="text" class="form-control" id="hotelAddress" placeholder="Input field" required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="c_note">Note</label>
+                        <input type="text" class="form-control" id="c_note" placeholder="Input field">
+                    </div>
+                </div>
+                <legend>Payment Info</legend>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="p_fname">First Name *</label>
+                        <input type="text" class="form-control" id="p_fname" placeholder="Input field" required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="p_lname">Last Name *</label>
+                        <input type="text" class="form-control" id="p_lname" placeholder="Input field" required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select class="form-control" id="country" placeholder="Input field" style="max-width:100%!important"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <label for="cardNo">Card No.</label>
+                        <select class="form-control" id="cardNo" placeholder="Input field" style="max-width:97%!important"></select>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <ul class="nav nav-pills payments">
+                            <li><i class="fa fa-cc-visa"></i></li>
+                            <li><i class="fa fa-cc-mastercard"></i></li>
+                            <li><i class="fa fa-cc-amex"></i></li>
+                            <li><i class="fa fa-cc-paypal"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label for="expDate">Expired Date *</label>
+                            <input type="date" class="form-control" id="expDate" placeholder="Input field" required>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label for="otpCode">OTP Code *</label>
+                            <input type="text" class="form-control" id="otpCode" placeholder="Input field" required>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label for="p_note">Note</label>
+                            <input type="text" class="form-control" id="p_note" placeholder="Input field">
+                        </div>
+                    </div>
+                    <button onclick="location.href = '/Tour/TourReservation';" type="submit" class="btn btn-success btn-checkout-submit" style="background-color:#4cae4c!important;font-weight:bold;margin-right:1%!important;">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+

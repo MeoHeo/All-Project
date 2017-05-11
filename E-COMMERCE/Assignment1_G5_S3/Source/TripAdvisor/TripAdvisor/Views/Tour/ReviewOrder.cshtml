@@ -1,0 +1,295 @@
+﻿@{
+    ViewBag.Title = "ReviewOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container">
+        <div class="row pad_top_bottom_10px">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <strong>Booking</strong> (step 1 of 3)
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <span>1</span> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to Cart ----------------->>
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="color:red!important;font-weight:bold!important;">
+                <span class="numberCircle">2</span> <i class="fa fa-eye" aria-hidden="true"></i> Review order <span style="color:black!important;font-weight:normal!important;">----------------->></span>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <span>3</span> <i class="fa fa-check" aria-hidden="true"></i> Checkout
+            </div>
+        </div>
+        <div class="row pad_top_bottom_10px">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <span class="glyphicon glyphicon-arrow-left" style="color:darkblue"></span><a href="/Tour/Tour" style="font-size:1.3em"> Continue shopping</a>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+               <a href="/Tour/CheckOut" type="button" class="btn btn-warning btn_confirm_availability btn_checkout">Checkout</a>
+            </div>
+        </div>
+        <div class="row cart_item pad_top_bottom_10px">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <h3><a href="#">Deluxe Grand Canyon All American Helicopter Tour</a></h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="http://lorempixel.com/182/97/" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="short_info_cart">
+                        <li>
+                            <label for="">Travel date: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Option: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Number of Guests: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Booking status: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Note: </label>Saturday March 18, 2017
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 remove_item_cart" style="line-height: 31px !important;">
+                <div class="row bold">Quanity</div>
+                <div class="input-group">
+                    <span class="input-group-btn" style="width:15%!important">
+                        <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="width:70%!important;">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="row pad_10px">
+                    <a href="#">
+                        <div class="glyphicon glyphicon-remove" style="color:darkgrey"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 price_item_cart">
+                USD
+                <br>
+                <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup><span class="priceCard">588.61</span></strong>
+            </div>
+        </div>
+        <div class="row cart_item pad_top_bottom_10px">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <h3><a href="#">Deluxe Grand Canyon All American Helicopter Tour</a></h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="http://lorempixel.com/182/97/" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="short_info_cart">
+                        <li>
+                            <label for="">Travel date: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Option: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Number of Guests: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Booking status: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Note: </label>Saturday March 18, 2017
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 remove_item_cart" style="line-height: 31px !important;">
+                <div class="row bold">Quanity</div>
+                <div class="input-group">
+                    <span class="input-group-btn" style="width:15%!important">
+                        <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="width:70%!important;">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="row pad_10px">
+                    <a href="#">
+                        <div class="glyphicon glyphicon-remove" style="color:darkgrey"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 price_item_cart">
+                USD
+                <br>
+                <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup><span class="priceCard">588.61</span></strong>
+            </div>
+        </div>
+        <div class="row cart_item pad_top_bottom_10px">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <h3><a href="#">Deluxe Grand Canyon All American Helicopter Tour</a></h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="http://lorempixel.com/182/97/" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="short_info_cart">
+                        <li>
+                            <label for="">Travel date: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Option: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Number of Guests: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Booking status: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Note: </label>Saturday March 18, 2017
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 remove_item_cart" style="line-height: 31px !important;">
+                <div class="row bold">Quanity</div>
+                <div class="input-group">
+                    <span class="input-group-btn" style="width:15%!important">
+                        <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="width:70%!important;">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="row pad_10px">
+                    <a href="#">
+                        <div class="glyphicon glyphicon-remove" style="color:darkgrey"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 price_item_cart">
+                USD
+                <br>
+                <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup><span class="priceCard">588.61</span></strong>
+            </div>
+        </div>
+        <div class="row cart_item pad_top_bottom_10px">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <h3><a href="#">Deluxe Grand Canyon All American Helicopter Tour</a></h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="http://lorempixel.com/182/97/" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="short_info_cart">
+                        <li>
+                            <label for="">Travel date: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Option: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Number of Guests: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Booking status: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Note: </label>Saturday March 18, 2017
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 remove_item_cart" style="line-height: 31px !important;">
+                <div class="row bold">Quanity</div>
+                <div class="input-group">
+                    <span class="input-group-btn" style="width:15%!important">
+                        <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="width:70%!important;">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="row pad_10px">
+                    <a href="#">
+                        <div class="glyphicon glyphicon-remove" style="color:darkgrey"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 price_item_cart">
+                USD
+                <br>
+                <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup><span class="priceCard">588.61</span></strong>
+            </div>
+        </div>
+        <div class="row cart_item pad_top_bottom_10px">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <h3><a href="#">Deluxe Grand Canyon All American Helicopter Tour</a></h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="http://lorempixel.com/182/97/" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="short_info_cart">
+                        <li>
+                            <label for="">Travel date: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Option: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Number of Guests: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Booking status: </label>Saturday March 18, 2017
+                        </li>
+                        <li>
+                            <label for="">Note: </label>Saturday March 18, 2017
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 remove_item_cart" style="line-height: 31px !important;">
+                <div class="row bold">Quanity</div>
+                <div class="input-group">
+                    <span class="input-group-btn" style="width:15%!important">
+                        <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="width:70%!important;">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="row pad_10px">
+                    <a href="#">
+                        <div class="glyphicon glyphicon-remove" style="color:darkgrey"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 price_item_cart">
+                USD
+                <br>
+                <strong style="font-size:1.1em"><sup style="font-size:0.5em">&dollar;</sup><span class="priceCard">588.61</span></strong>
+            </div>
+        </div>
+    </div>
+

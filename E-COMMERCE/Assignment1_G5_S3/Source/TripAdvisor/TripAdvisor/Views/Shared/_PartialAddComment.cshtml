@@ -1,0 +1,93 @@
+﻿@*append*@
+@*<div class="row">
+    @*<hr class="divider">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <span class="glyphicon glyphicon-user"></span>
+    </div>
+    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">--div2
+        <div><a href="#">Jasmine W</a></div>
+        <span class="rating">
+            <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+            <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+            <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+            <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+            <img src="https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png" alt="">
+        </span>
+        <p class="timeComment">2 March 2017</p>
+        <br>
+        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum beatae aperiam repellendus recusandae laudantium voluptatem sed dolore iure, natus, quia doloribus reiciendis sapiente voluptates voluptate ratione corrupti officia? Repellendus.</p>
+    </div>*@
+@*</div>*@
+@*add*@
+<div class="row">
+    <hr class="divider">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <span class="glyphicon glyphicon-user"></span>
+    </div>
+
+        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+            <div>
+                <a href="#">Your Comment</a>
+                <br>
+                <textarea name="" id="inputComment" required="required" rows="25" cols="60" style="max-width:100%!important;max-height:100px!important;"></textarea>
+            </div>
+            <br />
+            <span class="rating">
+                <span style="color:red!important">Star rating:</span>
+                <select id="ratingUser">                   
+                    <option value="1">1 star</option>
+                    <option value="2">2 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="5">5 stars</option>
+                    <option value="0">0 star</option>
+                </select>
+            </span>
+            <button class="btn btn-info" style="float:right!important;" id="addComment">Send</button>
+        </div>
+
+    <script>
+        $('#addComment').on('click',function () {
+            var row = $("<div>", { "class": "row" });
+            var hr = $("<hr/>", { "class": "divider" });
+            var div1 = $("<div>", { "class": "col-xs-1 col-sm-1 col-md-1 col-lg-1"});
+            var span1 = $("<span>", { "class": "glyphicon glyphicon-user" });
+            var div2 = $("<div>", { "class": "col-xs-11 col-sm-11 col-md-11 col-lg-11" });
+            var div2_1 = $("<div>");
+            var a_div2_1 = $("<a>");
+            var span2 = $("<span>", {"class": "rating" });
+            var p2 = $("<p>", { "class": "timeComment" });
+            var br2 = $("<br/>");
+            var comment = $("<p>", { "class": "comment" });
+            var txtComment = $('#inputComment').val();
+            
+            var numberStar = parseInt($('#ratingUser :selected').val());
+            if (numberStar != 0)
+            {
+                for(var i=0;i<numberStar;i++)
+                {
+                    var star = $("<img>", { "src": "https://cdn4.iconfinder.com/data/icons/CornerStone/PNG/star-4.png","alt":"","class": "wideAdd" });
+                    $(span2).append( star);
+                }
+            }
+            
+
+            $(a_div2_1).append("Mew");
+            $(div1).append(span1);
+            $(row).append(hr);
+            $(row).append(div1);
+            $(div2_1).append(a_div2_1);
+            $(p2).append("2 March 2017");
+            $(div2).append(div2_1);
+            $(div2).append(span2);
+            $(div2).append(p2);
+            $(div2).append(br2);
+            $(comment).append(txtComment);
+            $(div2).append(comment);
+
+            $(row).append(div2);
+            $('#contentDetailTour').append(row);
+        })
+    </script>
+
+</div>

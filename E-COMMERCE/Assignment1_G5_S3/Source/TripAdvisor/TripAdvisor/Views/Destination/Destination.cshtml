@@ -1,0 +1,308 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Destination";
+}
+@*<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tour List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
+
+    </script>
+</head>
+
+<body>*@
+    <!--  Like facebook button-->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '765425070261833',
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Private</a></li>
+            <li><a href="#">Pictures</a></li>
+            <li class="active">Vacation</li>
+        </ul>
+        <div class="row">
+            <!--        Left-->
+            <div class="tour_category col-md-2">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Item 1</a>
+                    <a href="#" class="list-group-item">Item 2</a>
+                    <a href="#" class="list-group-item">Item 3</a>
+                    <a href="#" class="list-group-item">Item 1</a>
+                    <a href="#" class="list-group-item">Item 2</a>
+                    <a href="#" class="list-group-item">Item 3</a>
+                    <a href="#" class="list-group-item">Item 1</a>
+                    <a href="#" class="list-group-item">Item 2</a>
+                    <a href="#" class="list-group-item">Item 3</a>
+                    <a href="#" class="list-group-item active">Item 1</a>
+                    <a href="#" class="list-group-item">Item 2</a>
+                    <a href="#" class="list-group-item">Item 3</a>
+                    <a href="#" class="list-group-item">Item 1</a>
+                    <a href="#" class="list-group-item">Item 2</a>
+                    <a href="#" class="list-group-item">Item 3</a>
+                    <a href="#" class="list-group-item">Item 1</a>
+                    <a href="#" class="list-group-item">Item 2</a>
+                    <a href="#" class="list-group-item">Item 3</a>
+                </div>
+
+            </div>
+            <!--        Right-->
+            <div class="tour_list">
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <!--                    <img class="img-responsive" src="https://cache-graphicslib.viator.com/graphicslib/destination/las-vegas-133300.jpg" alt="Chania">-->
+                    <img class="img-responsive" src="http://lorempixel.com/g/1043/316/" alt="Chania">
+                    <h3>DESTINATION NAME</h3>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="form-group row sort_by">
+                                <label for="input" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 control-label">Sort by:</label>
+                                <div class="col-sm-9">
+                                    <select name="" id="input" class="form-control" required="required">
+                                        <option value="newest">Newest</option>
+                                        <option value="most_popular">Most Popular</option>
+                                        <option value="most_rating">Most Rating</option>
+                                        <option value="most_viewing">Most Viewing</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 facebook">
+                            <div class="fb-like" data-href="https://www.facebook.com/TripAdvisor/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row viewing">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                            <h4>View 1 of 3</h4>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 tour_pagination">
+                            <ul class="pagination pagination-md">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="row tour_item">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <img class="img-responsive img-rounded" src="https://cache-graphicslib.viator.com/graphicslib/thumbs210x118/5167/SITours/self-drive-1-day-grand-canyon-whitewater-rafting-tour-in-las-vegas-47569.jpg" alt="Chania">
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4>Self Frive 1 Day Grand Canyon Whitewater Rafting Tour</h4>
+                            <div class="tour_rating"></div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum pariatur numquam odio enim rerum, aut voluptas corporis labore quam! Veritatis quos, excepturi iusto voluptas porro fugiat eveniet maiores tempora!
+                            <br>
+                            <label>Location: </label>
+                            <span class="location">Las Vegas, Nevada , Arizona</span>
+                            <br>
+                            <label>Duration: </label>
+                            <span class="duration">17 hours</span>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 see_detail">                           
+                            <div>
+                                <a class="btn btn-warning btn_see_detail" href="/Detail/DetailDestination" target="_blank">See Details</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row tour_item">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <img class="img-responsive img-rounded" src="https://cache-graphicslib.viator.com/graphicslib/thumbs210x118/3951/SITours/grand-canyon-and-hoover-dam-day-trip-from-las-vegas-with-optional-in-las-vegas-383813.jpg" alt="Chania">
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4>Self Frive 1 Day Grand Canyon Whitewater Rafting Tour</h4>
+                            <div class="tour_rating"></div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum pariatur numquam odio enim rerum, aut voluptas corporis labore quam! Veritatis quos, excepturi iusto voluptas porro fugiat eveniet maiores tempora!
+                            <br>
+                            <label>Location: </label>
+                            <span class="location">Las Vegas, Nevada , Arizona</span>
+                            <br>
+                            <label>Duration: </label>
+                            <span class="duration">17 hours</span>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 see_detail">
+                            <div>
+                                <a class="btn btn-warning btn_see_detail" href="/Detail/DetailDestination" target="_blank">See Details</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--                    //////////////////////////////////////-->
+                    <div class="row tour_item">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <img class="img-responsive img-rounded" src="https://cache-graphicslib.viator.com/graphicslib/thumbs210x118/3431/SITours/ultimate-hoover-dam-tour-in-las-vegas-115073.jpg" alt="Chania">
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4>Self Frive 1 Day Grand Canyon Whitewater Rafting Tour</h4>
+                            <div class="tour_rating"></div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum pariatur numquam odio enim rerum, aut voluptas corporis labore quam! Veritatis quos, excepturi iusto voluptas porro fugiat eveniet maiores tempora!
+                            <br>
+                            <label>Location: </label>
+                            <span class="location">Las Vegas, Nevada , Arizona</span>
+                            <br>
+                            <label>Duration: </label>
+                            <span class="duration">17 hours</span>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 see_detail">
+                            <div>
+                                <a class="btn btn-warning btn_see_detail" href="/Detail/DetailDestination" target="_blank">See Details</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--                    //////////////////////////////////////-->
+                    <div class="row tour_item">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <img class="img-responsive img-rounded" src="https://cache-graphicslib.viator.com/graphicslib/thumbs210x118/3153/SITours/red-rock-canyon-tour-in-las-vegas-150692.jpg" alt="Chania">
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4>Self Frive 1 Day Grand Canyon Whitewater Rafting Tour</h4>
+                            <div class="tour_rating"></div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum pariatur numquam odio enim rerum, aut voluptas corporis labore quam! Veritatis quos, excepturi iusto voluptas porro fugiat eveniet maiores tempora!
+                            <br>
+                            <label>Location: </label>
+                            <span class="location">Las Vegas, Nevada , Arizona</span>
+                            <br>
+                            <label>Duration: </label>
+                            <span class="duration">17 hours</span>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 see_detail">
+                            <div>
+                                <a class="btn btn-warning btn_see_detail" href="/Detail/DetailDestination" target="_blank">See Details</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--                    //////////////////////////////////////-->
+                    <div class="row tour_item">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <img class="img-responsive img-rounded" src="https://cache-graphicslib.viator.com/graphicslib/thumbs210x118/3951/SITours/grand-canyon-south-rim-bus-tour-with-optional-upgrades-in-las-vegas-390866.jpg" alt="Chania">
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4>Self Frive 1 Day Grand Canyon Whitewater Rafting Tour</h4>
+                            <div class="tour_rating"></div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum pariatur numquam odio enim rerum, aut voluptas corporis labore quam! Veritatis quos, excepturi iusto voluptas porro fugiat eveniet maiores tempora!
+                            <br>
+                            <label>Location: </label>
+                            <span class="location">Las Vegas, Nevada , Arizona</span>
+                            <br>
+                            <label>Duration: </label>
+                            <span class="duration">17 hours</span>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 see_detail">
+                            <div>
+                                <a class="btn btn-warning btn_see_detail" href="/Detail/DetailDestination" target="_blank">See Details</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--                    //////////////////////////////////////-->
+                    <div class="row tour_item">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <img class="img-responsive img-rounded" src="https://cache-graphicslib.viator.com/graphicslib/thumbs210x118/5673/SITours/small-group-grand-canyon-west-rim-day-tour-from-las-vegas-in-las-vegas-370876.jpg" alt="Chania">
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4>Self Frive 1 Day Grand Canyon Whitewater Rafting Tour</h4>
+                            <div class="tour_rating"></div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum pariatur numquam odio enim rerum, aut voluptas corporis labore quam! Veritatis quos, excepturi iusto voluptas porro fugiat eveniet maiores tempora!
+                            <br>
+                            <label>Location: </label>
+                            <span class="location">Las Vegas, Nevada , Arizona</span>
+                            <br>
+                            <label>Duration: </label>
+                            <span class="duration">17 hours</span>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 see_detail">
+                            <div>
+                                <a class="btn btn-warning btn_see_detail" href="/Detail/DetailDestination" target="_blank">See Details</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--                    //////////////////////////////////////-->
+                    <div class="row tour_item">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <img class="img-responsive img-rounded" src="https://cache-graphicslib.viator.com/graphicslib/thumbs210x118/5516/SITours/las-vegas-combo-tour-grand-canyon-helicopter-flight-and-colorado-in-las-vegas-150014.jpg" alt="Chania">
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <h4>Self Frive 1 Day Grand Canyon Whitewater Rafting Tour</h4>
+                            <div class="tour_rating"></div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum pariatur numquam odio enim rerum, aut voluptas corporis labore quam! Veritatis quos, excepturi iusto voluptas porro fugiat eveniet maiores tempora!
+                            <br>
+                            <label>Location: </label>
+                            <span class="location">Las Vegas, Nevada , Arizona</span>
+                            <br>
+                            <label>Duration: </label>
+                            <span class="duration">17 hours</span>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 see_detail">
+                            <div>
+                                <a class="btn btn-warning btn_see_detail" href="/Detail/DetailDestination" target="_blank">See Details</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+

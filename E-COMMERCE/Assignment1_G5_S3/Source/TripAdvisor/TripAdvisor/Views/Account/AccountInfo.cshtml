@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_PartialAccountInfoLayout.cshtml";
+}
+
+<div class="container" style="background-color:white!important;">
+    <form action='update_user_info.php?userid=$userid' method='post'>
+        <table class='table' style='width:100%;margin-top:2%!important;'>
+            <tr class='info'>
+                <th>User ID </th>
+                <td name='userid'>2803</td>
+            </tr>
+            <tr>
+                <th> <br><br>Avartar</th>
+                <td>
+                    <img src='http://lorempixel.com/200/200/cats/' class='img-circle' alt='Cinque Terre' width='100' height='100'>
+                    <input name='avatar' type='file'>
+                </td>
+            </tr>
+            <tr class='info'>
+                <th>Last name</th>
+                <td><input class='form-control' type='text' name='name_input' value='Nguyen'></td>
+            </tr>
+            <tr>
+                <th>First name</th>
+                <td><input class='form-control' type='text' name='name_input' value='Phuong'></td>
+            </tr>
+            <tr class='info'>
+                <th>User name</th>
+                <td><input class='form-control' type='text' name='full_name_input' value='Mew'></td>
+            </tr>
+            <tr>
+                <th>Current password</th>
+                <td><input class='form-control' type='password' name='pass_input' value='123456'></td>
+            </tr>
+            <tr class='info'>
+                <th>New password</th>
+                <td><input class='form-control' type='password' name='pass_input' value=''></td>
+            </tr>
+            <tr>
+                <th>Confirm new password</th>
+                <td><input class='form-control' type='password' name='pass_input' value=''></td>
+            </tr>
+            <tr class='info'>
+                <th>Email</th>
+                <td><input class='form-control' type='text' name='full_email_input' value='1527032@hcmut.edu.vn'></td>
+            </tr>
+            <tr>
+                <th>Phone number</th>
+                <td><input class='form-control' type='text' name='full_phone_input' value='09867543'></td>
+            </tr>
+        </table>
+        <input class="btn btn-primary btn-block submitUpload" type='submit' name='update' value='Submit' style='background-color:dodgerblue!important;border-color:dodgerblue!important;'>
+    </form>
+</div>

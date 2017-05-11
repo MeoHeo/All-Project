@@ -1,0 +1,29 @@
+﻿@{int active_item = 0;}
+<div class="container">
+    <div id="advertisement" class="carousel slide col-xs-12" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+           
+                @foreach (var imgPath in Directory.GetFiles(Server.MapPath("~/Content/Uploads/Ads"), "*.png"))
+                {
+                    var img = new FileInfo(imgPath);
+                    if (active_item == 0)
+                    {
+                        <div class="item active col-xs-12">
+                            <img src="@Url.Content(String.Format("~/Content/Uploads/Ads/{0}", img.Name))" alt="Chania">
+
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="item col-xs-12">
+                            <img src="@Url.Content(String.Format("~/Content/Uploads/Ads/{0}", img.Name))" alt="Chania">
+
+                        </div>
+                    }
+                    active_item++;
+                }
+            
+        </div>
+    </div>
+</div>
