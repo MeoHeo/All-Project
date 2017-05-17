@@ -29,7 +29,7 @@ namespace Nop.Web.Factories
         /// <returns>Collection of product overview model</returns>
         IEnumerable<ProductOverviewModel> PrepareProductOverviewModels(IEnumerable<Product> products,
             bool preparePriceModel = true, bool preparePictureModel = true,
-            int? productThumbPictureSize = null, bool prepareSpecificationAttributes = false,
+            int? productThumbPictureSize = null, bool prepareSpecificationAttributes = true,
             bool forceRedirectionAfterAddingToCart = false);
 
         /// <summary>

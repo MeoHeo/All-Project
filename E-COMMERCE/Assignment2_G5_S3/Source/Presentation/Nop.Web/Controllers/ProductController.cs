@@ -203,7 +203,7 @@ namespace Nop.Web.Controllers
             if (!products.Any())
                 return Content("");
 
-            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize, true).ToList();
+            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize).ToList();
             return PartialView(model);
         }
 
@@ -230,7 +230,7 @@ namespace Nop.Web.Controllers
             if (!products.Any())
                 return Content("");
 
-            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize, true).ToList();
+            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize).ToList();
             return PartialView(model);
         }
 
@@ -257,7 +257,7 @@ namespace Nop.Web.Controllers
             //even if "ShoppingCartSettings.DisplayCartAfterAddingProduct" setting  is enabled.
             //That's why we force page refresh (redirect) in this case
             var model = _productModelFactory.PrepareProductOverviewModels(products,
-                productThumbPictureSize: productThumbPictureSize, prepareSpecificationAttributes: true,forceRedirectionAfterAddingToCart: true)
+                productThumbPictureSize: productThumbPictureSize, forceRedirectionAfterAddingToCart: true)
                 .ToList();
 
             return PartialView(model);
@@ -303,8 +303,7 @@ namespace Nop.Web.Controllers
             model.AddRange(_productModelFactory.PrepareProductOverviewModels(products,
                 preparePriceModel.GetValueOrDefault(),
                 preparePictureModel,
-                productThumbPictureSize,
-                prepareSpecificationAttributes: true));
+                productThumbPictureSize));
 
             return PartialView(model);
         }
@@ -401,7 +400,7 @@ namespace Nop.Web.Controllers
                 return Content("");
 
             //prepare model
-            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize, true).ToList();
+            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize).ToList();
             return PartialView(model);
         }
 
@@ -417,7 +416,7 @@ namespace Nop.Web.Controllers
             if (!products.Any())
                 return Content("");
 
-            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize,true).ToList();
+            var model = _productModelFactory.PrepareProductOverviewModels(products, true, true, productThumbPictureSize).ToList();
             return PartialView(model);
         }
 
@@ -440,8 +439,8 @@ namespace Nop.Web.Controllers
 
             if (_catalogSettings.ProductReviewPossibleOnlyAfterPurchasing &&
                 !_orderService.SearchOrders(customerId: _workContext.CurrentCustomer.Id, productId: productId, osIds: new List<int> { (int)OrderStatus.Complete }).Any())
-                    ModelState.AddModelError(string.Empty, _localizationService.GetResource("Reviews.ProductReviewPossibleOnlyAfterPurchasing"));
-            
+                ModelState.AddModelError(string.Empty, _localizationService.GetResource("Reviews.ProductReviewPossibleOnlyAfterPurchasing"));
+
             //default value
             model.AddProductReview.Rating = _catalogSettings.DefaultProductRatingValue;
             return View(model);
@@ -468,9 +467,9 @@ namespace Nop.Web.Controllers
                 ModelState.AddModelError("", _localizationService.GetResource("Reviews.OnlyRegisteredUsersCanWriteReviews"));
             }
 
-            if (_catalogSettings.ProductReviewPossibleOnlyAfterPurchasing && 
+            if (_catalogSettings.ProductReviewPossibleOnlyAfterPurchasing &&
                 !_orderService.SearchOrders(customerId: _workContext.CurrentCustomer.Id, productId: productId, osIds: new List<int> { (int)OrderStatus.Complete }).Any())
-                    ModelState.AddModelError(string.Empty, _localizationService.GetResource("Reviews.ProductReviewPossibleOnlyAfterPurchasing"));
+                ModelState.AddModelError(string.Empty, _localizationService.GetResource("Reviews.ProductReviewPossibleOnlyAfterPurchasing"));
 
             if (ModelState.IsValid)
             {
@@ -641,7 +640,7 @@ namespace Nop.Web.Controllers
             {
                 ModelState.AddModelError("", _localizationService.GetResource("Products.EmailAFriend.OnlyRegisteredUsers"));
             }
-            
+
             if (ModelState.IsValid)
             {
                 //email

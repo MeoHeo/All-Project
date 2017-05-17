@@ -1,1 +1,3 @@
-we use open source Nop Commerce for this project
+The application use Nop Commerce open source.
+To open this app, use must to add two file in Data folder to your computer. 
+The path is like: "C:\Users\HP\NopTestDatabase.mdf"

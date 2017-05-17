@@ -49,11 +49,11 @@ namespace Nop.Web.Controllers
 
         public CatalogController(ICatalogModelFactory catalogModelFactory,
             IProductModelFactory productModelFactory,
-            ICategoryService categoryService, 
+            ICategoryService categoryService,
             IManufacturerService manufacturerService,
-            IProductService productService, 
+            IProductService productService,
             IVendorService vendorService,
-            IWorkContext workContext, 
+            IWorkContext workContext,
             IStoreContext storeContext,
             ILocalizationService localizationService,
             IWebHelper webHelper,
@@ -61,7 +61,7 @@ namespace Nop.Web.Controllers
             IGenericAttributeService genericAttributeService,
             IAclService aclService,
             IStoreMappingService storeMappingService,
-            IPermissionService permissionService, 
+            IPermissionService permissionService,
             ICustomerActivityService customerActivityService,
             MediaSettings mediaSettings,
             CatalogSettings catalogSettings,
@@ -91,7 +91,7 @@ namespace Nop.Web.Controllers
         #endregion
 
         #region Categories
-        
+
         [NopHttpsRequirement(SslRequirement.No)]
         public virtual ActionResult Category(int categoryId, CatalogPagingFilteringModel command)
         {
@@ -112,8 +112,8 @@ namespace Nop.Web.Controllers
                 return InvokeHttp404();
 
             //'Continue shopping' URL
-            _genericAttributeService.SaveAttribute(_workContext.CurrentCustomer, 
-                SystemCustomerAttributeNames.LastContinueShoppingPage, 
+            _genericAttributeService.SaveAttribute(_workContext.CurrentCustomer,
+                SystemCustomerAttributeNames.LastContinueShoppingPage,
                 _webHelper.GetThisPageUrl(false),
                 _storeContext.CurrentStore.Id);
 
@@ -145,7 +145,7 @@ namespace Nop.Web.Controllers
             var model = _catalogModelFactory.PrepareTopMenuModel();
             return PartialView(model);
         }
-        
+
         [ChildActionOnly]
         public virtual ActionResult HomepageCategories()
         {
@@ -180,11 +180,11 @@ namespace Nop.Web.Controllers
                 return InvokeHttp404();
 
             //'Continue shopping' URL
-            _genericAttributeService.SaveAttribute(_workContext.CurrentCustomer, 
-                SystemCustomerAttributeNames.LastContinueShoppingPage, 
+            _genericAttributeService.SaveAttribute(_workContext.CurrentCustomer,
+                SystemCustomerAttributeNames.LastContinueShoppingPage,
                 _webHelper.GetThisPageUrl(false),
                 _storeContext.CurrentStore.Id);
-            
+
             //display "edit" (manage) link
             if (_permissionService.Authorize(StandardPermissionProvider.AccessAdminPanel) && _permissionService.Authorize(StandardPermissionProvider.ManageManufacturers))
                 DisplayEditLink(Url.Action("Edit", "Manufacturer", new { id = manufacturer.Id, area = "Admin" }));
@@ -194,7 +194,7 @@ namespace Nop.Web.Controllers
 
             //model
             var model = _catalogModelFactory.PrepareManufacturerModel(manufacturer, command);
-            
+
             //template
             var templateViewPath = _catalogModelFactory.PrepareManufacturerTemplateViewPath(manufacturer.ManufacturerTemplateId);
             return View(templateViewPath, model);
@@ -217,7 +217,7 @@ namespace Nop.Web.Controllers
 
             if (!model.Manufacturers.Any())
                 return Content("");
-            
+
             return PartialView(model);
         }
 
@@ -237,7 +237,7 @@ namespace Nop.Web.Controllers
                 SystemCustomerAttributeNames.LastContinueShoppingPage,
                 _webHelper.GetThisPageUrl(false),
                 _storeContext.CurrentStore.Id);
-            
+
             //display "edit" (manage) link
             if (_permissionService.Authorize(StandardPermissionProvider.AccessAdminPanel) && _permissionService.Authorize(StandardPermissionProvider.ManageVendors))
                 DisplayEditLink(Url.Action("Edit", "Vendor", new { id = vendor.Id, area = "Admin" }));
@@ -268,14 +268,14 @@ namespace Nop.Web.Controllers
             var model = _catalogModelFactory.PrepareVendorNavigationModel();
             if (!model.Vendors.Any())
                 return Content("");
-            
+
             return PartialView(model);
         }
 
         #endregion
 
         #region Product tags
-        
+
         [ChildActionOnly]
         public virtual ActionResult PopularProductTags()
         {
@@ -283,7 +283,7 @@ namespace Nop.Web.Controllers
 
             if (!model.Tags.Any())
                 return Content("");
-            
+
             return PartialView(model);
         }
 
@@ -350,7 +350,7 @@ namespace Nop.Web.Controllers
                 visibleIndividuallyOnly: true,
                 pageSize: productNumber);
 
-            var models =  _productModelFactory.PrepareProductOverviewModels(products, false, _catalogSettings.ShowProductImagesInSearchAutoComplete, _mediaSettings.AutoCompleteSearchThumbPictureSize, prepareSpecificationAttributes: true).ToList();
+            var models = _productModelFactory.PrepareProductOverviewModels(products, false, _catalogSettings.ShowProductImagesInSearchAutoComplete, _mediaSettings.AutoCompleteSearchThumbPictureSize).ToList();
             var result = (from p in models
                           select new
                           {
